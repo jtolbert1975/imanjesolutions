@@ -1,0 +1,34 @@
+
+<form {{action "submitForm" onSubmit="submitForm"}}>
+<h2>Contact Information</h2>
+
+<div class="form-group">
+    <label for="name">Your Name:</label>
+    {{input type="text" class="form-control focusedInput" value=contact.name required="required"}}
+
+</div>
+<div class="form-group">
+    <label for="email">Email Address:</label>
+    {{input type="email" class="form-control focusedInput" value=contact.email require="required"}}
+</div>
+<div class="form-group">
+    <label for="phone">Phone Number:</label>
+    {{input type="tel" class="form-control focusedInput" value=contact.phone require="required" }}
+</div>
+<label>Preferred Contact Method:</label>
+<div class="radio">
+    <label>{{radio-button type='radio' name='optradio' value='Email' checked=selectedContctMethd}}Email</label>
+    <label>{{radio-button type='radio' name='optradio' value='Phone' checked=selectedContctMethd}}Phone</label>
+    <label>{{radio-button type='radio' name='optradio' value='Text' checked=selectedContctMethd}}Text</label>
+    <label>{{radio-button type='radio' name='optradio' value='Skype' checked=selectedContctMethd}}Skype</label>
+    <label>{{radio-button type='radio' name='optradio' value='Facetime' checked=selectedContctMethd}}Facetime</label>
+</div>
+<div class="form-group">
+    <label for="inquiry">Inquiry:</label>
+    {{textarea class="form-control" rows="5" id="inquiry" value=contact.request}}
+</div>
+    <div class="row">
+        <button type="submit" class="btn btn-info pull-right" value="Submit" {{action 'toggleModal'}}>Submit</button>
+    </div>
+</form>
+

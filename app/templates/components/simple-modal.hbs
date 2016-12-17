@@ -1,0 +1,15 @@
+{{#if isEnabled}}
+    <div class="modal-fog">
+        <div class="modal-frame">
+            <div class="modal-title">
+                {{title}}
+            </div>
+            <div class="modal-body">
+                <a title="Close"  {{action 'toggleModal'}}><i  class="glyphicon glyphicon-remove icon-arrow-right pull-right pointer"></i></a>
+                {{yield}}
+
+
+            </div>
+        </div>
+    </div>
+{{/if}}

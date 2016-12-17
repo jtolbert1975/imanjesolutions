@@ -1,0 +1,50 @@
+<!--<a href="#" action 'showClick' this}}><h2>Quote</h2></a>
+<div class="quote-form if isShown "showForm" "hideForm"}}">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf3TbvKx8mTh_QvdWLSDOYd9hz4meexISPfZstJ79yjwHNdRg/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+</div>-->
+
+<a href="#" {{action 'showQuoteFm' 'modal-quote'}}><h2>Quote</h2></a>
+<div class="row">
+    <span class="col-lg-10 pull-left"> For A Detailed Quote select <b>"Quote"</b></span>
+</div>
+
+{{yeild}}
+{{#if isQuote}}
+    <div class="panel panel-info">
+        <div class="panel-heading"><h2>Quote Information</h2></div>
+     <form class="panel-body">
+        <div class="form-group">
+            <label for="name">Your Name:</label>
+            {{input type="text" class="form-control" value=quote.name required="required"}}
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            {{input type="email" class="form-control focusedInput" value=email require="required"}}
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            {{input type="tel" class="form-control focusedInput" value=phone require="required" }}
+        </div>
+         <div class="row">
+             <button type="submit" class="btn btn-info pull-right" {{bind-attr disabled=disabled}} {{action "submitQuote" this}}value="Submit">Submit</button>
+         </div>
+     </form>
+</div>
+{{/if}}
+
+<!--<h2 id="title">Welcome to Ember.js</h2>-->
+<!--<div class="row">
+    <div class="col-md-12">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf3TbvKx8mTh_QvdWLSDOYd9hz4meexISPfZstJ79yjwHNdRg/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    </div>
+</div>-->
+{{outlet}}
+{{#if isSubmitted}}
+    <div class="form-group has-success has-feedback col-lg-12 success-fix">
+
+        <input type="text" class="form-control" id="inputSuccess" value="Thank you! You will be contacted with in 1 business day">
+        <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+
+    </div>
+{{/if}}
+

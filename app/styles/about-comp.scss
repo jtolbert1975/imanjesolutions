@@ -1,0 +1,26 @@
+
+.elipse {
+  width: 200px;
+  height: 100px;
+  background: #0fccee;
+  -moz-border-radius: 100px / 50px;
+  -webkit-border-radius: 100px / 50px;
+  border-radius: 100px / 50px;
+}
+
+.about-logo {
+  margin-top: -50px;
+}
+
+.about-logo__height{
+  height: 152px;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.img-size {
+  width: 200px;
+  height: 225px;
+}
