@@ -1,0 +1,36 @@
+<h2 class="text-center">What We Do</h2>
+<div class="text-center about-logo__height">
+    <img src="/assets/images/aboutLogo.png" alt="Imanje Solutions" class="about-logo"/>
+</div>
+<div class="row text-center">
+    <div>
+        <a href="#" Id="dev" {{action 'titleClick' this}}><h2>Website Development</h2></a>
+        <ul class="services__list isActive  {{if isActive "dev-open" "notactive"}}">
+            <li>Responsive Design/Development</li>
+            <li>Wordpress Development</li>
+            <li>E-commerce</li>
+            <li>Website Repair and Maintenance</li>
+        </ul>
+    </div>
+    <div>
+        <a href="#" {{action 'appsClick' this}}><h2 id="app">Web Applications</h2></a>
+        <ul class="services__list apps {{if isApps "dev-open" "notactive"}}">
+            <li>Mobile Web Applications</li>
+            <li>Database Design and Optimization</li>
+            <li>Social Network/Profile Centric Apps</li>
+            <li>Software as a Service(SaaS) Applications</li>
+        </ul>
+    </div>
+    <div>
+        <a href="#" {{action 'netClick' this}}><h2 id="net">Network Architecture & Optimization</h2></a>
+        <ul class="services__list net {{if isNet "dev-open" "notactive"}}">
+            <li>Network Design/Implementation</li>
+            <li>Network Optimization</li>
+            <li>Cloud Computing/AWS</li>
+            <li>Web Services and Web Hosting</li>
+        </ul>
+    </div>
+</div>
+
+
+

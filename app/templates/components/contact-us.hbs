@@ -1,0 +1,64 @@
+
+    <!--<a href="#" action 'showClick' this}}><h2>Contact Us</h2></a>-->
+    <a href="#" {{action 'openModal' 'modal-contact'}}><h2>Contact Us</h2></a>
+    {{#if notSubmit}}
+        <div class="row">
+            <span class="col-lg-10 pull-left">For General Inquires select <b>"Contact Us"</b></span>
+        </div>
+    {{/if}}
+
+    {{yeild}}
+
+    {{#if isShown}}
+        <div class="panel panel-info">
+            <div class="panel-heading"><h2>Contact Information</h2></div>
+        <form class="panel-body">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                {{input type="text" class="form-control focusedInput" value=name required="required"}}
+                {{#if nameErr}}
+                    <span>{{nameErr}}</span>
+                    {{else}}
+                    <span>&nbsp;</span>
+                {{/if}}
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                {{input type="email" class="form-control focusedInput" value=email require="required"}}
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                {{input type="tel" class="form-control focusedInput" value=phone require="required" }}
+            </div>
+            <label>Preferred Contact Method:</label>
+            <div class="radio">
+                <label>{{radio-button type='radio' name='optradio' value='Email' checked=selectedContctMethd}}Email</label>
+                <label>{{radio-button type='radio' name='optradio' value='Phone' checked=selectedContctMethd}}Phone</label>
+                <label>{{radio-button type='radio' name='optradio' value='Text' checked=selectedContctMethd}}Text</label>
+                <label>{{radio-button type='radio' name='optradio' value='Skype' checked=selectedContctMethd}}Skype</label>
+                <label>{{radio-button type='radio' name='optradio' value='Facetime' checked=selectedContctMethd}}Facetime</label>
+            </div>
+            <div class="form-group">
+                <label for="inquiry">Inquiry:</label>
+                {{textarea class="form-control" rows="5" id="inquiry" value=requests}}
+            </div>
+            <div class="row">
+                <button type="submit" class="btn btn-info pull-right" {{bind-attr disabled=disabled}} {{action "submitForm" this}}value="Submit">Submit</button>
+            </div>
+        </form>
+        </div>
+    {{/if}}
+
+
+
+
+    {{outlet}}
+  {{#if isSubmitted}}
+      <div class="form-group has-success has-feedback col-lg-12 success-fix">
+
+              <input type="text" class="form-control" id="inputSuccess" value="Thank you! You will be contacted with in 1 business day">
+              <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+
+      </div>
+   {{/if}}
+
