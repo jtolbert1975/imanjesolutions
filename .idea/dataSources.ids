@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - imanje@localhost" uuid="59a15668-c874-4ddb-b825-ab1a95509450">
+    <database-info product="MySQL" version="5.5.42" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
+      <schema id="1" name="imanje"/>
+      <table id="2" parent="1" name="contacts"/>
+      <table id="3" parent="1" name="quotes"/>
+      <column id="4" parent="2" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="5" parent="2" name="first_name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="6" parent="2" name="last_name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="7" parent="2" name="email">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="8" parent="2" name="phone">
+        <data-type>varchar(12)</data-type>
+      </column>
+      <column id="9" parent="2" name="contact_method">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="10" parent="2" name="request">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="11" parent="2" name="contact_date">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <index id="12" parent="2" name="id">
+        <columns>id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="13" parent="2" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="14" parent="3" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="15" parent="3" name="f_name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="16" parent="3" name="l_name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="17" parent="3" name="email">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="18" parent="3" name="phone">
+        <mandatory>1</mandatory>
+        <data-type>varchar(12)</data-type>
+      </column>
+      <column id="19" parent="3" name="description">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="20" parent="3" name="budget">
+        <mandatory>1</mandatory>
+        <data-type>varchar(25)</data-type>
+      </column>
+      <column id="21" parent="3" name="url">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="22" parent="3" name="number_pages">
+        <data-type>varchar(25)</data-type>
+      </column>
+      <column id="23" parent="3" name="site_description">
+        <data-type>mediumtext</data-type>
+      </column>
+      <column id="24" parent="3" name="features">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="25" parent="3" name="ex_url_1">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="26" parent="3" name="ex_url_2">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="27" parent="3" name="ex_url_3">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="28" parent="3" name="contact_id">
+        <data-type>int(11)</data-type>
+      </column>
+      <key id="29" parent="3" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>

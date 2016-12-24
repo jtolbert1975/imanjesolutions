@@ -1,9 +1,12 @@
 <div class="container">
-    {{partial 'navbar'}}
-    {{#partial 'container'}}
+    {{nav-bar}}
+    {{#content-container}}
     {{outlet}}
-    {{/partial}}
+    {{/content-container}}
+
 </div>
 <div class="container">
 
 </div>
+
+<!--TODO: Change the partials to components-->

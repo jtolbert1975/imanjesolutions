@@ -16,7 +16,7 @@ export default Ember.Route.extend({
             controller: 'quote'
         });
     },*/
-
+/*
     model(){
         return Ember.RSVP.hash({
             contact: this.get('store').findAll('Contacts'),
@@ -29,5 +29,5 @@ export default Ember.Route.extend({
         this._super(...arguments);
         Ember.set(controller, 'contact', model.contact);
         Ember.set(controller, 'quote', model.quote);
-    }
+    }*/
 });

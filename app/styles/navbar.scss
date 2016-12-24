@@ -102,3 +102,15 @@
 
 }
 
+.collapse {
+  @media all and (min-width: 1024px) {
+    display: block;
+  }
+}
+
+.navbar-toggle {
+  @media all and (min-width: 769px) {
+    display: none;
+  }
+}
+
