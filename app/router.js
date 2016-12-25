@@ -12,6 +12,7 @@ Router.map(function() {
   this.route('services');
   this.route('contact');
   this.route('admin');
+  this.route('contacts');
 });
 
 

@@ -1,15 +1,18 @@
 import DS from 'ember-data';
 
- var Contacts = DS.Model.extend({
-    name: DS.attr('string'),
+ var contacts = DS.Model.extend({
+     id: DS.attr('number'),
+    f_name: DS.attr('string'),
+    l_name: DS.attr('string'),
     email: DS.attr('string'),
     phone: DS.attr('string'),
+    skype: DS.attr('string'),
     contactMethd: DS.attr('string'),
     request: DS.attr('string')
 });
 
 
-Contacts.reopenClass({
+/*Contacts.reopenClass({
     FIXTURES: [
         {
             id: 0,
@@ -39,6 +42,6 @@ Contacts.reopenClass({
         }
     ]
 
-}) ;
+}) ;*/
 
-export default Contacts;
+export default contacts;
