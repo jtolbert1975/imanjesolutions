@@ -14,6 +14,14 @@ module.exports = function(environment) {
       EXTEND_PROTOTYPES: {
         // Prevent Ember Data from overriding Date.parse.
         Date: false
+      },
+
+      firebase: {
+        apiKey: "AIzaSyBV5xwkS-4i9Lsv5nxLsuZJr3RFSojXa6Q",
+        authDomain: "imanje-cefa4.firebaseapp.com",
+        databaseURL: "https://imanje-cefa4.firebaseio.com",
+        storageBucket: "imanje-cefa4.appspot.com",
+        messagingSenderId: "138960442912"
       }
     },
 
