@@ -1,0 +1,13 @@
+<div class="row inq__tab--row">
+    <div class="col-lg-1">
+{{!--{{#link-to 'admin' tagName="span" class="inq__tab inq__tab--title"}}<a href="">Admin</a>{{/link-to}}--}}
+    </div>
+    <div class="col-lg-1 inq__tab--contact">
+{{!--{{#link-to 'contacts.inquiries' tagName="span" class="inq__tab inq__tab--title"}}<a href="">Contacts</a>{{/link-to}}--}}
+        <a href="" class="inq__tab inq__tab--title" data-name="contacts"{{action "showTab" "contacts"}}>Contacts</a>
+    </div>
+    <div class="col-lg-3 inq__tab--quotes">
+{{!--{{#link-to 'contacts.inquiries' tagName="span" class="inq__tab inq__tab--title"}}<a href="">Quotes</a>{{/link-to}}--}}
+        <a href="" class="inq__tab inq__tab--title" data-name="quotes" {{action "showTab" "quotes"}}>Quotes</a>
+    </div>
+</div>

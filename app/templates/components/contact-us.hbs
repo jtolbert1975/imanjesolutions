@@ -1,21 +1,20 @@
 
-    <!--<a href="#" action 'showClick' this}}><h2>Contact Us</h2></a>-->
-    <a href="#" {{action 'openModal' 'modal-contact'}}><h2>Contact Us</h2></a>
+    <a href="#" {{action 'showForm'}}><h2>Contact Us</h2></a>
     {{#if notSubmit}}
         <div class="row">
             <span class="col-lg-10 pull-left">For General Inquires select <b>"Contact Us"</b></span>
         </div>
     {{/if}}
 
-    {{yeild}}
+
 
     {{#if isShown}}
         <div class="panel panel-info">
             <div class="panel-heading"><h2>Contact Information</h2></div>
         <form class="panel-body">
             <div class="form-group">
-                <label for="name">Your Name:</label>
-                {{input type="text" class="form-control focusedInput" value=name required="required"}}
+                <label for="fname">First Name:</label>
+                {{input type="text" class="form-control focusedInput" value=fname id="fname" required="required"}}
                 {{#if nameErr}}
                     <span>{{nameErr}}</span>
                     {{else}}
@@ -23,15 +22,29 @@
                 {{/if}}
             </div>
             <div class="form-group">
-                <label for="email">Email Address:</label>
-                {{input type="email" class="form-control focusedInput" value=email require="required"}}
+                <label for="lname">Last Name:</label>
+                {{input type="text" class="form-control focusedInput" value=lname id="lname" required="required"}}
+                {{#if nameErr}}
+                    <span>{{nameErr}}</span>
+                {{else}}
+                    <span>&nbsp;</span>
+                {{/if}}
             </div>
             <div class="form-group">
-                <label for="phone">Phone Number:</label>
-                {{input type="tel" class="form-control focusedInput" value=phone require="required" }}
+                <label for="email">Email Address:</label>
+                {{input type="email" class="form-control focusedInput" id="email" value=email require="required"}}
+            </div>
+            <div class="form-group">
+                <label for="phone">Best Contact Number:</label>
+                {{input type="phone" class="form-control focusedInput" id="phone" value=phone }}
+            </div>
+
+            <div class="form-group">
+                <label for="skype">Skype Id:</label>
+                {{input type="text" class="form-control focusedInput" id="skype" value=skype }}
             </div>
             <label>Preferred Contact Method:</label>
-            <div class="radio">
+            <div class="radio" id="method">
                 <label>{{radio-button type='radio' name='optradio' value='Email' checked=selectedContctMethd}}Email</label>
                 <label>{{radio-button type='radio' name='optradio' value='Phone' checked=selectedContctMethd}}Phone</label>
                 <label>{{radio-button type='radio' name='optradio' value='Text' checked=selectedContctMethd}}Text</label>
@@ -39,14 +52,17 @@
                 <label>{{radio-button type='radio' name='optradio' value='Facetime' checked=selectedContctMethd}}Facetime</label>
             </div>
             <div class="form-group">
-                <label for="inquiry">Inquiry:</label>
-                {{textarea class="form-control" rows="5" id="inquiry" value=requests}}
+                <label for="request">Question:</label>
+                {{textarea class="form-control" rows="5" id="request" value=request}}
             </div>
             <div class="row">
-                <button type="submit" class="btn btn-info pull-right" {{bind-attr disabled=disabled}} {{action "submitForm" this}}value="Submit">Submit</button>
+                <div class="col-lg-offset-3">
+                    {{yeild}}
+                 {{submit-button text="Submit" value="Submit" onSubmit=(action "createContact")}}
+                </div>
             </div>
         </form>
-        </div>
+    </div>
     {{/if}}
 
 

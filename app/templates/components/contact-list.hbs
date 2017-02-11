@@ -1,0 +1,103 @@
+{{yield}}
+<div class="theader">
+    <h1>Contacts</h1>
+</div>
+<!--Column Headers-->
+<div class="trow">
+    <!--ID-->
+    <div class="tcol-1">
+        <span class="table-header">ID</span>
+    </div>
+    <!--Name-->
+    <div class="tcol-2">
+        <span class="table-header">Name</span>
+    </div>
+    <!--Email-->
+    <div class="tcol-2">
+        <span class="table-header">Email</span>
+    </div>
+    <!--Phone-->
+    <div class="tcol-2">
+        <span class="table-header">Phone</span>
+    </div>
+    <!--Skype-->
+    <div class="tcol-1">
+        <span class="table-header">Skype</span>
+    </div>
+    <!--Method-->
+    <div class="tcol-1">
+        <span class="table-header tooltip">Contact
+            <span class="tooltiptext">Preferred Contact Method</span>
+        </span>
+
+    </div>
+    <!--Request-->
+    <div class="tcol-3">
+        <span class="table-header">Inquiry</span>
+    </div>
+</div>
+<!--Contacts List-->
+{{#each contacts as |contact|}}
+    <div class="trow">
+        <!--ID-->
+        <div class="tcol-1">
+            <span class="table-cell">{{contact.id}}</span>
+        </div>
+        <!--Name-->
+        <div class="tcol-2">
+            <span class="table-cell">{{contact.f_name}}{{contact.l_name}}</span>
+        </div>
+        <!--Email-->
+        <div class="tcol-2">
+            <span class="table-cell">{{contact.email}}</span>
+        </div>
+        <!--Phone-->
+        <div class="tcol-2">
+            <span class="table-cell">{{contact.phone}}</span>
+        </div>
+        <!--Skype-->
+        <div class="tcol-1">
+            <span class="table-cell">{{contact.skype}}</span>
+        </div>
+        <!--Method-->
+        <div class="tcol-1">
+            <span class="table-cell">{{contact.contactMethd}}</span>
+        </div>
+        <!--Request-->
+        <div class="tcol-3">
+            <span class="table-cell">{{contact.request}}</span>
+        </div>
+    </div>
+
+{{/each}}
+
+<div class="trow">
+    <!--ID-->
+    <div class="tcol-1">
+        <span class="table-cell">3</span>
+    </div>
+    <!--Name-->
+    <div class="tcol-2">
+        <span class="table-cell">Kim West</span>
+    </div>
+    <!--Email-->
+    <div class="tcol-2">
+        <span class="table-cell">kwestpawg3@tmail.com</span>
+    </div>
+    <!--Phone-->
+    <div class="tcol-2">
+        <span class="table-cell">308-626-9669</span>
+    </div>
+    <!--Skype-->
+    <div class="tcol-1">
+        <span class="table-cell">kimk99</span>
+    </div>
+    <!--Method-->
+    <div class="tcol-1">
+        <span class="table-cell">skype</span>
+    </div>
+    <!--Request-->
+    <div class="tcol-3">
+        <span class="table-cell">Can you improve my sites security?</span>
+    </div>
+</div>

@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+.t-table{
+  width: 100.1%;
+  margin: 6.5px auto;
+}
+.theader {
+  border: 1px solid #090909;
+  padding: 15px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a9e4f7+15,0fb4e7+32,a9e4f7+66,0fb4e7+100 */
+  background: #a9e4f7; /* Old browsers */
+  background: -moz-linear-gradient(top,  #a9e4f7 15%, #0fb4e7 32%, #a9e4f7 66%, #0fb4e7 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #a9e4f7 15%,#0fb4e7 32%,#a9e4f7 66%,#0fb4e7 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #a9e4f7 15%,#0fb4e7 32%,#a9e4f7 66%,#0fb4e7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9e4f7', endColorstr='#0fb4e7',GradientType=0 ); /* IE6-9 */
+  text-align: center
+
+}
+.row::after, .trow::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+[class*="tcol-"] {
+  float: left;
+  padding: 15px;
+  border: 1px solid #090909;
+}
+.tcol-1 {width: 8.33%;}
+.tcol-2 {width: 16.66%;}
+.tcol-3 {width: 25%;}
+.tcol-4 {width: 33.33%;}
+.tcol-5 {width: 41.66%;}
+.tcol-6 {width: 50%;}
+.tcol-7 {width: 58.33%;}
+.tcol-8 {width: 66.66%;}
+.tcol-9 {width: 75%;}
+.tcol-10 {width: 83.33%;}
+.tcol-11 {width: 91.66%;}
+.tcol-12 {width: 100%;}
+
+.table-header{
+  text-decoration: underline;
+  text-align: center;
+}
+.table-cell {
+  font-size: .85em;
+}
+
+.trow:nth-child(odd){
+  background-color: #99DFF5;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  opacity: 1;
+
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
