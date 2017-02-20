@@ -3,10 +3,23 @@ import DS from 'ember-data';
 var Quotes = DS.Model.extend({
     name: DS.attr('string'),
     email: DS.attr('string'),
-    phone: DS.attr('string')
+    phone: DS.attr('string'),
+    about: DS.attr('string'),
+    budget: DS.attr('string'),
+    web_address: DS.attr('string'),
+    pages: DS.attr('string'),
+    description: DS.attr('string'),
+    features: DS.attr('string'),
+    example1: DS.attr('string'),
+    example2: DS.attr('string'),
+    example3: DS.attr('string'),
+
+
+
+
 });
 
-Quotes.reopenClass({
+/*Quotes.reopenClass({
     FIXTURES: [
     {
         id: 0,
@@ -32,6 +45,6 @@ Quotes.reopenClass({
 
     }
 ]
-});
+});*/
 
 export default Quotes;

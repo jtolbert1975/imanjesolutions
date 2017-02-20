@@ -22,6 +22,7 @@ module.exports = function(environment) {
     firebase: {
       apiKey: "AIzaSyBV5xwkS-4i9Lsv5nxLsuZJr3RFSojXa6Q",
       authDomain: "imanje-cefa4.firebaseapp.com",
+      contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
       databaseURL: "https://imanje-cefa4.firebaseio.com",
       storageBucket: "imanje-cefa4.appspot.com",
       messagingSenderId: "138960442912"
@@ -37,7 +38,7 @@ module.exports = function(environment) {
     contentSecurityPolicy: {
       'default-src' : "'none'",
       'connect-src': "'self' https://auth.firebase.com ws://localhost:49154/livereload wss://*.firebaseio.com ",
-      'frame-src': "'self' https://*.firebaseio.com",
+      'child-src': "'self' https://*.firebaseio.com",
       'script-src': "'self' 'unsafe-eval' ws://localhost:49154/livereload https://www.gstatic.com/ https://*.firebaseio.com"
     },
   /*  contentSecurityPolicy: {
@@ -80,8 +81,8 @@ module.exports = function(environment) {
     ENV.locationType = 'none';
 
     // keep test console output quieter
-    ENV.APP.LOG_ACTIVE_GENERATION = false;
-    ENV.APP.LOG_VIEW_LOOKUPS = false;
+    //ENV.APP.LOG_ACTIVE_GENERATION = false;
+   //ENV.APP.LOG_VIEW_LOOKUPS = false;
 
     ENV.APP.rootElement = '#ember-testing';
   }

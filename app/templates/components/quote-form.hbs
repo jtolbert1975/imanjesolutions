@@ -1,21 +1,19 @@
-<!--<a href="#" action 'showClick' this}}><h2>Quote</h2></a>
-<div class="quote-form if isShown "showForm" "hideForm"}}">
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf3TbvKx8mTh_QvdWLSDOYd9hz4meexISPfZstJ79yjwHNdRg/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-</div>-->
 
-<a href="#" {{action 'showQuoteFm' 'modal-quote'}}><h2>Quote</h2></a>
+
+<a href="#" {{action 'showQuoteFm'}}><h2>Quote</h2></a>
+{{#if notSubmit}}
 <div class="row">
     <span class="col-lg-10 pull-left"> For A Detailed Quote select <b>"Quote"</b></span>
 </div>
+{{/if}}
 
-{{yeild}}
 {{#if isQuote}}
     <div class="panel panel-info">
         <div class="panel-heading"><h2>Quote Information</h2></div>
      <form class="panel-body">
         <div class="form-group">
             <label for="name">Your Name:</label>
-            {{input type="text" class="form-control" value=quote.name required="required"}}
+            {{input type="text" class="form-control" value=name required="required"}}
         </div>
         <div class="form-group">
             <label for="email">Email Address:</label>
@@ -25,20 +23,56 @@
             <label for="phone">Phone Number:</label>
             {{input type="tel" class="form-control focusedInput" value=phone require="required" }}
         </div>
+         <div class="form-group">
+             <label for="about">In short, what this project is about?</label>
+             {{input type="text" class="form-control focusedInput" value=about require="required" }}
+         </div>
+         <div class="form-group">
+             <label for="budget">What is your budget?</label>
+             <div class="radio" id="budget">
+                 <label>{{radio-button type='radio' name='optradio' value='100-500' checked=selectedBudget}}$100-$500</label>
+                 <label>{{radio-button type='radio' name='optradio' value='500-800' checked=selectedBudget}}$500-$800</label>
+                 <label>{{radio-button type='radio' name='optradio' value='800-1500' checked=selectedBudget}}$800-$1500</label>
+                 <label>{{radio-button type='radio' name='optradio' value='1500-5000' checked=selectedBudget}}$1500-$5000</label>
+                 <label>{{radio-button type='radio' name='optradio' value='5000-10000' checked=selectedBudget}}$5000-$10000</label>
+             </div>
+         </div>
+         <div class="form-group">
+             <label for="webaddress">What is your current/intended website address? e.g. wwww.yourwebsite.com</label>
+             {{input type="text" class="form-control focusedInput" value=web_address}}
+         </div>
+         <div class="form-group">
+             <label for="pages">Approximately how many pages/sections will your site have?</label>
+             <div class="radio" id="pages">
+                 <label>{{radio-button type='radio' name='optradio' value='100-500' checked=selectedPages}}1-4</label>
+                 <label>{{radio-button type='radio' name='optradio' value='500-800' checked=selectedPages}}5-10</label>
+                 <label>{{radio-button type='radio' name='optradio' value='800-1500' checked=selectedPages}}10-20</label>
+                 <label>{{radio-button type='radio' name='optradio' value='1500-5000' checked=selectedPages}}20+</label>
+             </div>
+         </div>
+         <div class="form-group">
+             <label for="description">How should visitors describe your new site?</label>
+             {{input type="text" class="form-control focusedInput" value=description require="required" }}
+         </div>
+         <div class="form-group">
+             <label for="features">Name some specific features/functionality.</label>
+             {{input type="text" class="form-control focusedInput" value=features}}
+         </div>
+         <div class="form-group">
+             <label for="examples">Are there any particular sites that you like?.</label>
+             {{input type="text" class="form-control focusedInput" value=example1}}
+             {{input type="text" class="form-control focusedInput" value=example2}}
+             {{input type="text" class="form-control focusedInput" value=example3}}
+         </div>
          <div class="row">
-             <button type="submit" class="btn btn-info pull-right" {{bind-attr disabled=disabled}} {{action "submitQuote" this}}value="Submit">Submit</button>
+             {{yeild}}
+             {{submit-button text="Submit" value="Submit" onSubmit=(action "createQuote")}}
          </div>
      </form>
 </div>
 {{/if}}
-
-<!--<h2 id="title">Welcome to Ember.js</h2>-->
-<!--<div class="row">
-    <div class="col-md-12">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf3TbvKx8mTh_QvdWLSDOYd9hz4meexISPfZstJ79yjwHNdRg/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-    </div>
-</div>-->
 {{outlet}}
+
 {{#if isSubmitted}}
     <div class="form-group has-success has-feedback col-lg-12 success-fix">
 

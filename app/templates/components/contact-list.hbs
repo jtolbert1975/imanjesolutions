@@ -5,9 +5,9 @@
 <!--Column Headers-->
 <div class="trow">
     <!--ID-->
-    <div class="tcol-1">
-        <span class="table-header">ID</span>
-    </div>
+    <!--<div class="tcol-1">-->
+        <!--<span class="table-header">ID</span>-->
+    <!--</div>-->
     <!--Name-->
     <div class="tcol-2">
         <span class="table-header">Name</span>
@@ -32,20 +32,50 @@
 
     </div>
     <!--Request-->
-    <div class="tcol-3">
+    <div class="tcol-4">
         <span class="table-header">Inquiry</span>
     </div>
 </div>
 <!--Contacts List-->
-{{#each contacts as |contact|}}
+<!--<div class="trow">
+    &lt;!&ndash;ID&ndash;&gt;
+    <div class="tcol-1">
+        <span class="table-cell">3</span>
+    </div>
+    &lt;!&ndash;Name&ndash;&gt;
+    <div class="tcol-2">
+        <span class="table-cell">Kim West</span>
+    </div>
+    &lt;!&ndash;Email&ndash;&gt;
+    <div class="tcol-2">
+        <span class="table-cell">kwestpawg3@tmail.com</span>
+    </div>
+    &lt;!&ndash;Phone&ndash;&gt;
+    <div class="tcol-2">
+        <span class="table-cell">308-626-9669</span>
+    </div>
+    &lt;!&ndash;Skype&ndash;&gt;
+    <div class="tcol-1">
+        <span class="table-cell">kimk99</span>
+    </div>
+    &lt;!&ndash;Method&ndash;&gt;
+    <div class="tcol-1">
+        <span class="table-cell">skype</span>
+    </div>
+    &lt;!&ndash;Request&ndash;&gt;
+    <div class="tcol-3">
+        <span class="table-cell">Can you improve my sites security?</span>
+    </div>
+</div>-->
+{{#each contactEntries as |contact|}}
     <div class="trow">
         <!--ID-->
-        <div class="tcol-1">
-            <span class="table-cell">{{contact.id}}</span>
-        </div>
+        <!--<div class="tcol-1">-->
+            <!--<span class="table-cell"></span>-->
+        <!--</div>-->
         <!--Name-->
         <div class="tcol-2">
-            <span class="table-cell">{{contact.f_name}}{{contact.l_name}}</span>
+            <span class="table-cell" data-id={{contact.id}}>{{contact.f_name}}{{contact.l_name}}</span>
         </div>
         <!--Email-->
         <div class="tcol-2">
@@ -64,40 +94,11 @@
             <span class="table-cell">{{contact.contactMethd}}</span>
         </div>
         <!--Request-->
-        <div class="tcol-3">
+        <div class="tcol-4">
             <span class="table-cell">{{contact.request}}</span>
         </div>
     </div>
 
 {{/each}}
 
-<div class="trow">
-    <!--ID-->
-    <div class="tcol-1">
-        <span class="table-cell">3</span>
-    </div>
-    <!--Name-->
-    <div class="tcol-2">
-        <span class="table-cell">Kim West</span>
-    </div>
-    <!--Email-->
-    <div class="tcol-2">
-        <span class="table-cell">kwestpawg3@tmail.com</span>
-    </div>
-    <!--Phone-->
-    <div class="tcol-2">
-        <span class="table-cell">308-626-9669</span>
-    </div>
-    <!--Skype-->
-    <div class="tcol-1">
-        <span class="table-cell">kimk99</span>
-    </div>
-    <!--Method-->
-    <div class="tcol-1">
-        <span class="table-cell">skype</span>
-    </div>
-    <!--Request-->
-    <div class="tcol-3">
-        <span class="table-cell">Can you improve my sites security?</span>
-    </div>
-</div>
+

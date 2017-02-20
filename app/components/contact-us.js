@@ -44,45 +44,24 @@ export default Ember.Component.extend({
     },
 
     didInsertElement(){
-    /*  var contactInfo = this.get('data');
-        contactInfo.map(item=> {
-            console.log(item.get('name'));
-        });*/
+
     },
 
 
 
     actions: {
 
-        /*showClick: function (element) {
-            this.toggleProperty('isShown');
-        },*/
-     /*  openModal: function() {
-           console.log("You Tried to Open the Form");
 
-           this.toggleProperty('isShown');
-
-        },*/
         showForm: function(){
 
 
             this.toggleProperty('isShown');
         },
 
-       //  submitForm: function() {
-             //console.log("You Called submit Form");
-            // this.send('createContact', this);
-
-
-            //this.toggleProperty('isShown');
-            // this.toggleProperty('isSubmitted');
-            // this.toggleProperty('notSubmit');
-             //return true;
-        //},
         createContact: function(){
             console.log("You are Now creating a contact");
-           let contactMethd = this.get('selectedContctMethd');
-            console.log("Contact Method: " + contactMethd);
+           //let contactMethd = this.get('selectedContctMethd');
+           // console.log("Contact Method: " + contactMethd);
             var store = this.get('store');
             var newContact = store.createRecord('contacts', {
                 f_name: this.get('fname'),
