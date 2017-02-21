@@ -32,8 +32,11 @@
 
     </div>
     <!--Request-->
-    <div class="tcol-4">
+    <div class="tcol-3">
         <span class="table-header">Inquiry</span>
+    </div>
+    <div class="tcol-1">
+        <span class="table-header">Make Quote</span>
     </div>
 </div>
 <!--Contacts List-->
@@ -94,8 +97,13 @@
             <span class="table-cell">{{contact.contactMethd}}</span>
         </div>
         <!--Request-->
-        <div class="tcol-4">
+        <div class="tcol-3">
             <span class="table-cell">{{contact.request}}</span>
+        </div>
+        <div class="tcol-1">
+            <div class="radio" id="budget">
+                <label>{{radio-button type='radio' name='optradio' value=contact.id checked=selectedQuote}}$100-$500</label>
+
         </div>
     </div>
 
