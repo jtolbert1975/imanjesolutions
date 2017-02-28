@@ -31,7 +31,9 @@
     <div class="tcol-1">
         <span class="table-header">Budget</span>
     </div>
+
 </div>
+
 <!--Contacts List-->
 {{#each quotes as |quote|}}
     <div class="trow">
@@ -41,7 +43,7 @@
         <!--</div>-->
         <!--Name-->
         <div class="tcol-2">
-            <span class="table-cell" data-id={{quote.id}}>{{quote.name}}</span>
+            <span class="table-cell"><a href="" {{action 'showModal'  quote.id}} data-id={{quote.id}}>{{quote.name}}</a></span>
         </div>
         <!--Email-->
         <div class="tcol-2">
@@ -67,34 +69,32 @@
 
 {{/each}}
 
-<!--<div class="trow">
-    &lt;!&ndash;ID&ndash;&gt;
-    <div class="tcol-1">
-        <span class="table-cell">3</span>
-    </div>
-    &lt;!&ndash;Name&ndash;&gt;
-    <div class="tcol-2">
-        <span class="table-cell">Kim West</span>
-    </div>
-    &lt;!&ndash;Email&ndash;&gt;
-    <div class="tcol-2">
-        <span class="table-cell">kwestpawg3@tmail.com</span>
-    </div>
-    &lt;!&ndash;Phone&ndash;&gt;
-    <div class="tcol-2">
-        <span class="table-cell">308-626-9669</span>
-    </div>
-    &lt;!&ndash;Skype&ndash;&gt;
-    <div class="tcol-1">
-        <span class="table-cell">kimk99</span>
-    </div>
-    &lt;!&ndash;Method&ndash;&gt;
-    <div class="tcol-1">
-        <span class="table-cell">skype</span>
-    </div>
-    &lt;!&ndash;Request&ndash;&gt;
-    <div class="tcol-3">
-        <span class="table-cell">Can you improve my sites security?</span>
-    </div>
-</div>-->
+{{outlet}}
+{{#if isShowingModal quote as |qt|}}
+  {{#modal-dialog
+    close='toggleCenteredScrolling'
+    translucentOverlay=true
+    targetAttachment='none'
+    container-class='centered-scrolling-container'
+    overlay-class='centered-scrolling-overlay'
+    wrapper-class='centered-scrolling-wrapper'
+    }}
+
+        <div class="row">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        </div>
+        <form {{action 'ok' on='submit'}}>
+            <div class="form-group">
+                <label>Name</label>
+                {{input  type="text" class="form-control" value=qt.name placeholder=qt.name}}
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" {{action 'ok'}}>OK</button>
+            </div>
+        </form>
+
+  {{/modal-dialog}}
+{{/if}}
+
 

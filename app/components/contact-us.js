@@ -75,9 +75,19 @@ export default Ember.Component.extend({
             });
 
            newContact.save();
-            this.get('router').transitionTo('thankyou');
+            //this.get('router').transitionTo('thankyou');
+            var tabName = quotes;
+            this.sendAction('showTab', tabName);
 
             //return true;
+        },
+
+        showTab: function (tabName){
+            console.log("You called Show Tab");
+
+            //let tname = tabName;
+            this.sendAction('myAction', tabName);
+            return true;
         }
 
 
