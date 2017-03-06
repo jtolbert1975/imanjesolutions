@@ -42,7 +42,7 @@ export default Ember.Component.extend({
             });
            // this.set('name', recd.name);
 
-            console.log("The quote is: ", recd);
+            //console.log("The quote is: ", recd);
             //this.set('quote', recd);
             this.toggleProperty('isShowingModal');
             //this.$().modal('show');

@@ -49,10 +49,10 @@ export default Ember.Component.extend({
             this.toggleProperty('isQuote');
         },
 
-        createQuote: function(){
+       /* createQuote: function(){
             console.log("You are Now creating a Quote");
 
-        },
+        },*/
 
 
 

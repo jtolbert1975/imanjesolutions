@@ -76,7 +76,7 @@ export default Ember.Component.extend({
 
            newContact.save();
             //this.get('router').transitionTo('thankyou');
-            var tabName = quotes;
+            var tabName = "quotes";
             this.sendAction('showTab', tabName);
 
             //return true;

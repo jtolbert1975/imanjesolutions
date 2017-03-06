@@ -31,7 +31,10 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    },
+
+
+
+},
 
 
 
@@ -66,8 +69,10 @@ module.exports = function(environment) {
 
   };
 
+
+
   if (environment === 'development') {
-    ENV.APP.LOG_RESOLVER = true;
+   // ENV.APP.LOG_RESOLVER = true;
     ENV.contentSecurityPolicy['connect-src'] = '*';
     ENV.contentSecurityPolicy['script-src'] = '\'self\' \'unsafe-eval\' \'unsafe-inline\' *';
     //ENV.APP.LOG_ACTIVE_GENERATION = true;
