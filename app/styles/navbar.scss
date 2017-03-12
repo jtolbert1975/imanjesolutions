@@ -69,8 +69,8 @@
 
 .navbar-inverse .navbar-nav > .active > a {
 
-  background-color: #030721;
-  border: 1px solid #ffffff;
+  //background-color: #030721;
+  //border: 1px solid #ffffff;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
@@ -78,23 +78,35 @@
 }
 
 .navbar-inverse {
-  background-color: #030721;
-  border-color: #090909;
+  //background-color: #030721;
+  //border-color: #090909;
 }
 
-.navbar-inverse .navbar-nav > li > a {
+.nav > li > a {
   background-color: #0fccee;
   color: #fff;
   border-radius: 24px 24px 24px
 }
 
+.nav > li > a:hover{
+  background-color: $mint-green;
+}
+
 .nav > li {
   border: 2px transparent solid;
+
 }
 
 .navbar{
-  height: 190px;
-  z-index: 1;
+  //height: 190px;
+  //z-index: 1;
+}
+
+.nav-row{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: baseline;
 }
 
 .navbar-collapse {

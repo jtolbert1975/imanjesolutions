@@ -7,8 +7,32 @@ $mint-green: #01FF70;
 $imanje-black: #03061E;
 
 //Fonts
-$reg-text: "Myriad Pro Regular";
-$header-text: "Mistral Regular";
+@font-face {
+  font-family: Mistral;
+  src: url('/assets/fonts/MISTRAL.TTF');
+}
 
+
+$reg-text: "Myriad Pro Regular";
+$header-text: Mistral;
+
+
+
+.IMANJE_SOLUTIONS {
+  font-size: 66.648px;
+  font-family: "Mistral";
+  color: rgb(7, 104, 237);
+  line-height: 1.2;
+  text-align: left;
+  -moz-transform: matrix( 0.66666666666667,0,0,0.7810546875,0,0);
+  -webkit-transform: matrix( 0.66666666666667,0,0,0.7810546875,0,0);
+  -ms-transform: matrix( 0.66666666666667,0,0,0.7810546875,0,0);
+  position: absolute;
+  left: 27.245px;
+  top: 33.534px;
+  width: 418.667px;
+  height: 53px;
+  z-index: 4;
+}
 
 

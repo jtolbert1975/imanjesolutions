@@ -8,6 +8,7 @@ const router = Ember.Router.extend({
 });
 
 router.map(function() {
+  this.route('home');
   this.route('about');
   this.route('services');
   this.route('contact', function() {});
@@ -17,6 +18,7 @@ router.map(function() {
     this.route('inquiries');
   });
   this.route('thankyou');
+
 
 });
 
