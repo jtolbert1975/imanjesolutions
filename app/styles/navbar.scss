@@ -24,6 +24,11 @@
   justify-content: space-between;
   padding: 0px;
   height: 56px;
+
+  .header--navbtn.active > a{
+    background-color: $banner-navy;
+  }
+
 }
 
 .header__motto {
@@ -69,7 +74,7 @@
 
 .navbar-inverse .navbar-nav > .active > a {
 
-  //background-color: #030721;
+  background-color: #030721;
   //border: 1px solid #ffffff;
 }
 
@@ -91,6 +96,7 @@
 .nav > li > a:hover{
   background-color: $mint-green;
 }
+
 
 .nav > li {
   border: 2px transparent solid;
