@@ -1,19 +1,107 @@
-
 <div class="row">
-  <div class="col-lg-offset-2 col-lg-4">
-      <span class="home-title">Who Are We</span>
-  </div>
-</div>
-<div class="row">
-    <div class="col-lg-offset-1 col-lg-5">
-        <p class="intro intro--mrgin-top">
-            <span class="intro__name">Imanje Solutions</span> is a web consulting firm whose goal is providing sound, innovative solutions for
-            your website, web application, and networking needs. We provide professional services in the areas of Web Design,
-            Web Development, Web Maintenance, Online Marketing and Branding Services. If your needs are a modern
-            innovative web solution from start to finish, or some extra hands to help steer your project across
-            the finish line. Imanje Solutions is here to help.
+    <div class="col-lg-offset-3 col-lg-6">
+        <p class="intro intro-top">
+            <span class="intro-bold">Imanje Solutions</span>, located in <i>Lawrenceville,GA</i> is a web consulting firm whose goal is providing sound,
+            innovative solutions for your Website , Web App, Social Networking and Branding
+            needs. If your needs are a modern innovative web solution from start to finish, or some extra
+            hands to steer your project across the finish line, Imanje Solutions is here to help.
         </p>
     </div>
 </div>
-
+<div class="row intro-row">
+    <div class="col-lg-2">
+        {{#if isWebdesign}}
+            <div class="info-square mintSqr1" {{action 'toggleSquare'}}>
+                <p class="info-square_text">Web Design</p>
+                <a href="" alt="Click Here" class="intro-click-text">Click Here</a>
+            </div>
+        {{/if}}
+        {{#if showWebdesign}}
+            <div class="info-square mintSqr1-box" {{action 'toggleSquare'}}>
+                <p class="mintSqr1-list_title">Web Design Services</p>
+                <ul class="mintSqr1-list">
+                    <li>Web Design and Development</li>
+                    <li>Responsive and Mobile Design</li>
+                    <li>WordPress Development</li>
+                    <li>Web Upgrades, Maintenance, Troubleshooting</li>
+                    <li>E-Commerce</li>
+                    <li>Cross Browser Compliant</li>
+                </ul>
+            </div>
+        {{/if}}
+    </div>
+    <div class="col-lg-offset-1 col-lg-2">
+        {{#if isWebApp}}
+            <div class="info-square skySqr1" {{action 'toggleApp'}}>
+                <p class="info-square_text">Web App Development</p>
+                <a href="" alt="Click Here" class="intro-click-text">Click Here</a>
+            </div>
+        {{/if}}
+        {{#if showWebApp}}
+            <div class="info-square skySqr1-box" {{action 'toggleApp'}}>
+                <p class="mintSqr1-list_title">Web App Development</p>
+                <ul class="mintSqr1-list">
+                    <li>Web App Design & Development</li>
+                    <li>JavaScript Solutions Design & Development</li>
+                    <li>New Features and Issue Resolution</li>
+                    <li>Database Development</li>
+                </ul>
+            </div>
+        {{/if}}
+    </div>
+    <div class="col-lg-offset-1 col-lg-2">
+        {{#if isSocial}}
+            <div class="info-square purpleSqr" {{action 'toggleSocial'}}>
+                <p class="info-square_text">Social Media Marketing</p>
+                <a href="" alt="Click Here" class="intro-click-text">Click Here</a>
+            </div>
+        {{/if}}
+        {{#if showSocial}}
+            <div class="info-square purpleSqr-box" {{action 'toggleSocial'}}>
+                <p class="mintSqr1-list_title">Social Media Marketing</p>
+                <ul class="mintSqr1-list">
+                    <li>SEO</li>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Youtube</li>
+                    <li>E-mail Campaigns</li>
+                </ul>
+            </div>
+        {{/if}}
+    </div>
+    <div class="col-lg-offset-1 col-lg-2">
+        {{#if isBranding}}
+            <div class="info-square yellowSqr" {{action 'toggleBrand'}}>
+                <p class="info-square_text">Branding Services</p>
+                <a href="" alt="Click Here" class="intro-click-text">Click Here</a>
+            </div>
+        {{/if}}
+        {{#if showBranding}}
+            <div class="info-square yellowSqr-box" {{action 'toggleBrand'}}>
+                <p class="mintSqr1-list_title">Branding Services</p>
+                <ul class="mintSqr1-list">
+                    <li>Logo Design</li>
+                    <li>Graphic Design</li>
+                    <li>Business Cards</li>
+                    <li>Flyers</li>
+                    <li>Brochures</li>
+                </ul>
+            </div>
+        {{/if}}
+    </div>
+</div>
+<div class="row more-info-row">
+    <div class="col-lg-offset-1 col-lg-1">
+        {{#link-to 'services' tagName="a"}}<a href="" alt="For More Info">More Info</a>{{/link-to}}
+    </div>
+    <div class="col-lg-offset-2 col-lg-1">
+        {{#link-to 'services' tagName="a"}}<a href="" alt="For More Info">More Info</a>{{/link-to}}
+    </div>
+    <div class="col-lg-offset-2 col-lg-1">
+        {{#link-to 'services' tagName="a"}}<a href="" alt="For More Info">More Info</a>{{/link-to}}
+    </div>
+    <div class="col-lg-offset-2 col-lg-1">
+        {{#link-to 'services' tagName="a"}}<a href="" alt="For More Info">More Info</a>{{/link-to}}
+    </div>
+</div>
 {{yield}}
