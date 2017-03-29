@@ -1,0 +1,71 @@
+<div class="container folio">
+    <div class="row">
+        <div class="col-lg-offset-5 col-lg-7">
+            <h2>GALLERY</h2>
+        </div>
+    </div>
+    <div class="row">
+      {{# if mCard}}
+        <div class="col-lg-3 card">
+            <img src="/assets/images/folio-imanje.png" alt="Imanje Solutions" />
+            <div class="card-link" onclick={{action 'showDesktop' 'dCard1'}}><span>Desktop View</span><img src="/assets/images/ultraviewer.ico" class="card-icon"/></div>
+        </div>
+     {{/if}}
+{{# if mCard}}
+        <div class="col-lg-3 card">
+            <img src="/assets/images/folio-vernadre.png" alt="VernadreShenae Artistry" />
+            <div class="card-link" onclick={{action 'showDesktop' 'dCard2'}}><span>Desktop View</span><img src="/assets/images/ultraviewer.ico" class="card-icon"/></div>
+        </div>
+    {{/if}}
+{{# if mCard}}
+        <div class="col-lg-3 card">
+            <img src="/assets/images/folio-supersonics.png" alt="Lilburn SuperSonics" />
+            <div class="card-link" onclick={{action 'showDesktop' 'dCard3'}}><span>Desktop View</span><img src="/assets/images/ultraviewer.ico" class="card-icon"/></div>
+        </div>
+    {{/if}}
+    </div>
+<!--<div class="row">
+{{# if mCard}}
+        <div class="col-lg-3 card">
+            <img src="/assets/images/folio-vernadre.png" alt="VernadreShenae Artistry" />
+            <div class="card-link" onclick={{action 'showDesktop' 'dCard4'}}><span>Desktop View</span><img src="/assets/images/ultraviewer.ico" class="card-icon"/></div>
+        </div>
+    {{/if}}
+{{# if mCard}}
+        <div class="col-lg-3 card">
+            <img src="/assets/images/folio-supersonics.png" alt="Lilburn SuperSonics" />
+            <div class="card-link" onclick={{action 'showDesktop' 'dCard5'}}><span>Desktop View</span><img src="/assets/images/ultraviewer.ico" class="card-icon"/></div>
+        </div>
+    {{/if}}
+{{# if mCard}}
+        <div class="col-lg-3 card">
+            <img src="/assets/images/folio-vernadre.png" alt="VernadreShenae Artistry" />
+            <div class="card-link" onclick={{action 'showDesktop' 'dCard6'}}><span>Desktop View</span><img src="/assets/images/ultraviewer.ico" class="card-icon"/></div>
+        </div>
+    {{/if}}
+    </div>-->
+</div>
+{{#if dCard1}}
+    <div class="row">
+        <div class="col-lg-offset-3 col-lg-5 card-desktop">
+            <img src="/assets/images/folio-imanjeDesktopLanding.png"  />
+            <div class="card-link" onclick={{action 'closeDesktop' 'dCard1'}}><span>Mobile View</span><img src="/assets/images/ultraviewer.ico" class="card-icon"/></div>
+        </div>
+    </div>
+{{/if}}
+{{#if dCard2}}
+    <div class="row">
+        <div class="col-lg-offset-3 col-lg-5 card-desktop">
+            <img src="/assets/images/folio-desktopVSA.png"  />
+            <div class="card-link" onclick={{action 'closeDesktop' 'dCard2'}}><span>Mobile View</span><img src="/assets/images/ultraviewer.ico" class="card-icon"/></div>
+        </div>
+    </div>
+{{/if}}
+{{#if dCard3}}
+    <div class="row">
+        <div class="col-lg-offset-3 col-lg-5 card-desktop">
+            <img src="/assets/images/folio-lilburnssDesktop.png"  />
+            <div class="card-link" onclick={{action 'closeDesktop' 'dCard3'}}><span>Mobile View</span><img src="/assets/images/ultraviewer.ico" class="card-icon"/></div>
+        </div>
+    </div>
+{{/if}}

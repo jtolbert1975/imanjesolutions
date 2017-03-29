@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - imanje@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.1">
+    <root id="1"/>
+    <schema id="2" parent="1" name="imanje">
+      <Visible>1</Visible>
+    </schema>
+    <table id="3" parent="2" name="contacts"/>
+    <table id="4" parent="2" name="quotes"/>
+    <column id="5" parent="3" name="id">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="6" parent="3" name="first_name">
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="7" parent="3" name="last_name">
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="8" parent="3" name="email">
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="9" parent="3" name="phone">
+      <DataType>varchar(12)|0</DataType>
+    </column>
+    <column id="10" parent="3" name="contact_method">
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="11" parent="3" name="request">
+      <DataType>longtext|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="12" parent="3" name="contact_date">
+      <DataType>timestamp|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;CURRENT_TIMESTAMP&apos;</DefaultExpression>
+    </column>
+    <index id="13" parent="3" name="id">
+      <ColNames>id</ColNames>
+    </index>
+    <key id="14" parent="3" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="15" parent="4" name="id">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="16" parent="4" name="f_name">
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="17" parent="4" name="l_name">
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="18" parent="4" name="email">
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="19" parent="4" name="phone">
+      <DataType>varchar(12)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="20" parent="4" name="description">
+      <DataType>longtext|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="21" parent="4" name="budget">
+      <DataType>varchar(25)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="22" parent="4" name="url">
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="23" parent="4" name="number_pages">
+      <DataType>varchar(25)|0</DataType>
+    </column>
+    <column id="24" parent="4" name="site_description">
+      <DataType>mediumtext|0</DataType>
+    </column>
+    <column id="25" parent="4" name="features">
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="26" parent="4" name="ex_url_1">
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="27" parent="4" name="ex_url_2">
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="28" parent="4" name="ex_url_3">
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="29" parent="4" name="contact_id">
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="30" parent="4" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

@@ -18,8 +18,7 @@ router.map(function() {
     this.route('inquiries');
   });
   this.route('thankyou');
-
-
+  this.route('folio');
 });
 
 

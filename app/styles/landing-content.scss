@@ -1,3 +1,4 @@
+
 .intro-row {
   margin-top: 57px;
 }
@@ -140,7 +141,7 @@
   flex-flow: row;
   align-items: center;
   justify-content: center;
-  margin-left: 40%;
+
 
     a{
 
@@ -152,3 +153,21 @@
         z-index: 49;
     }
 }
+
+.landing-container{
+  background-image: url("/assets/images/oceanBkg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.landing-intro_text{
+  font-size: 1.65em;
+  font-family: "Myriad Pro Regular";
+  color: #030721;
+  padding: 0px 12px 0px 12px;
+}
+
