@@ -1,0 +1,58 @@
+.folio{
+
+  h2{
+    color: $banner-navy;
+    text-decoration: underline;
+    text-shadow: 1.5px 1px $menuBtn-blue;
+    //$mint-green;
+  }
+
+  .card{
+    width: 270px;
+    height: 514px;
+    border: 2px solid #030721;
+    margin: 5%;
+
+     img{
+       margin-top: 5%;
+     }
+
+
+  }
+
+    .card:hover{
+      border-color: $menuBtn-blue;
+    }
+}
+
+.card-link{
+  margin-top: 23px;
+  text-align: center;
+  font-weight: bold;
+  color: #337ab7;
+  text-decoration: underline;
+
+
+}
+
+.card-link:hover{
+  color: $menuBtn-blue;
+}
+
+.card-icon {
+  width: 35px;
+  margin: 10px 5px;
+}
+
+.card-desktop{
+  margin-top: 10px;
+  border: 2px solid $banner-navy;
+  margin-left: 29%;
+
+
+  img{
+      padding: 0px 12px 3px 12px;
+    }
+}
+
+

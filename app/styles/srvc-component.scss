@@ -1,5 +1,13 @@
 .services__list {
   display: none;
+  background-color: #FFFFFF;
+
+   li{
+     list-style: none;
+   color: $banner-navy;
+
+   }
+
 }
 
 .active {
@@ -16,4 +24,35 @@
 
 .dev-open{
   display: block;
+}
+
+.service-drawer{
+  border: 1px solid $trump-navy;
+  background-color: $banner-text;
+
+   a{
+     color: #ffffff;
+   }
+
+
+
+
+}
+
+.service-drawer:hover{
+  border: 3px solid $mint-green;
+  //$menuBtn-blue;
+}
+
+.brand{
+  border-bottom: 2px solid $trump-navy;
+}
+
+.web{
+  border-top: 2px solid $trump-navy;
+}
+
+.plus-button{
+  margin-top: 27px;
+  color: #ffffff;
 }

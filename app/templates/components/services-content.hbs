@@ -2,34 +2,62 @@
 <div class="text-center about-logo__height">
     <img src="/assets/images/aboutLogo.png" alt="Imanje Solutions" class="about-logo"/>
 </div>
-<div class="row text-center">
-    <div>
+<div class="container-fluid">
+    <div class="row text-center">
+     <div class="col-md-offset-3 col-lg-6 service-drawer web">
+         <a href="#" Id="dev" {{action 'titleClick' this}}> <span class="glyphicon glyphicon-plus pull-right plus-button"></span></a>
         <a href="#" Id="dev" {{action 'titleClick' this}}><h2>Website Development</h2></a>
         <ul class="services__list isActive  {{if isActive "dev-open" "notactive"}}">
-            <li>Responsive Design/Development</li>
+            <li>Custom Website Design and Development</li>
+            <li>Responsive and Mobile Design</li>
             <li>Wordpress Development</li>
             <li>E-commerce</li>
-            <li>Website Repair and Maintenance</li>
+            <li>Website Maintenance, Repair and Upgrades</li>
+            <li>Web Hosting</li>
         </ul>
+     </div>
     </div>
-    <div>
+   <div class="row text-center">
+       <div class="col-md-offset-3 col-lg-6 service-drawer">
+        <a href="#" {{action 'appsClick' this}}> <span class="glyphicon glyphicon-plus pull-right plus-button"></span></a>
         <a href="#" {{action 'appsClick' this}}><h2 id="app">Web Applications</h2></a>
         <ul class="services__list apps {{if isApps "dev-open" "notactive"}}">
-            <li>Mobile Web Applications</li>
-            <li>Database Design and Optimization</li>
-            <li>Social Network/Profile Centric Apps</li>
-            <li>Software as a Service(SaaS) Applications</li>
+            <li>Mobile Web Applications - Deisgn and Development</li>
+            <li>SPA - Single Page Applications Deisgn and Development</li>
+            <li>JavaScript Solutions - Design and Development</li>
+            <li>New Features/Issue Resolution - Need a new feature or Issued resolved for your app</li>
+            <li>Database - Design and Development</li>
+            <li>Web Services and API Development</li>
         </ul>
+       </div>
     </div>
-    <div>
-        <a href="#" {{action 'netClick' this}}><h2 id="net">Network Architecture & Optimization</h2></a>
+   <div class="row text-center">
+     <div class="col-md-offset-3 col-lg-6 service-drawer">
+     <a href="#" {{action 'netClick' this}}><span class="glyphicon glyphicon-plus pull-right plus-button"></span></a>
+        <a href="#" {{action 'netClick' this}}><h2 id="net">Social Media Marketing</h2></a>
         <ul class="services__list net {{if isNet "dev-open" "notactive"}}">
-            <li>Network Design/Implementation</li>
-            <li>Network Optimization</li>
-            <li>Cloud Computing/AWS</li>
-            <li>Web Services and Web Hosting</li>
+            <li>SEO/Google Analytics</li>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Youtube</li>
+            <li>Instagram</li>
+            <li>E-mail Campaigns</li>
+        </ul>
+     </div>
+   </div>
+  <div class="row text-center">
+    <div class="col-md-offset-3 col-lg-6 service-drawer brand">
+        <a href="#" {{action 'brandClick' this}}> <span class="glyphicon glyphicon-plus pull-right plus-button"></span></a>
+        <a href="#" {{action 'brandClick' this}}><h2 id="brand">Branding Services</h2></a>
+        <ul class="services__list net {{if isBrand "dev-open" "notactive"}}">
+            <li>Graphic Design</li>
+            <li>Logo Design</li>
+            <li>Business Cards</li>
+            <li>Flyers & Brochures</li>
+            <li>T-shirts & Hats</li>
         </ul>
     </div>
+  </div>
 </div>
 
 

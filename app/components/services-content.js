@@ -5,6 +5,7 @@ export default Ember.Component.extend({
     isActive: 'false',
     isApps: 'false',
     isNet: 'false',
+    isBrand: 'false',
 
 
     init(){
@@ -12,6 +13,7 @@ export default Ember.Component.extend({
         this.set('isActive', false);
         this.set('isApps', false);
         this.set('isNet', false);
+        this.set('isBrand', false);
     },
     actions: {
 
@@ -28,6 +30,9 @@ export default Ember.Component.extend({
 
         netClick: function(){
              this.toggleProperty('isNet');
+        },
+        brandClick: function(){
+            this.toggleProperty('isBrand');
         }
 
 

@@ -5,9 +5,9 @@
 <!--Column Headers-->
 <div class="trow">
     <!--ID-->
-    <div class="tcol-1">
-        <span class="table-header">ID</span>
-    </div>
+    <!--<div class="tcol-1">-->
+        <!--<span class="table-header">ID</span>-->
+    <!--</div>-->
     <!--Name-->
     <div class="tcol-2">
         <span class="table-header">Name</span>
@@ -35,17 +35,21 @@
     <div class="tcol-3">
         <span class="table-header">Inquiry</span>
     </div>
+    <div class="tcol-1">
+        <span class="table-header">Quote</span>
+    </div>
 </div>
 <!--Contacts List-->
-{{#each contacts as |contact|}}
+
+{{#each contactEntries as |contact|}}
     <div class="trow">
         <!--ID-->
-        <div class="tcol-1">
-            <span class="table-cell">{{contact.id}}</span>
-        </div>
+        <!--<div class="tcol-1">-->
+            <!--<span class="table-cell"></span>-->
+        <!--</div>-->
         <!--Name-->
         <div class="tcol-2">
-            <span class="table-cell">{{contact.f_name}}{{contact.l_name}}</span>
+            <span class="table-cell" data-id={{contact.id}}>{{contact.f_name}}{{contact.l_name}}</span>
         </div>
         <!--Email-->
         <div class="tcol-2">
@@ -67,37 +71,14 @@
         <div class="tcol-3">
             <span class="table-cell">{{contact.request}}</span>
         </div>
+        <div class="tcol-1 make-quote">
+            <div class="radio" id="quote" {{action 'getID'}}>
+                <label>{{radio-button type='radio' name='optradio' value=contact.id checked=selectedQuote action="getID"}}</label>
+
+        </div>
+        </div>
     </div>
 
 {{/each}}
 
-<div class="trow">
-    <!--ID-->
-    <div class="tcol-1">
-        <span class="table-cell">3</span>
-    </div>
-    <!--Name-->
-    <div class="tcol-2">
-        <span class="table-cell">Kim West</span>
-    </div>
-    <!--Email-->
-    <div class="tcol-2">
-        <span class="table-cell">kwestpawg3@tmail.com</span>
-    </div>
-    <!--Phone-->
-    <div class="tcol-2">
-        <span class="table-cell">308-626-9669</span>
-    </div>
-    <!--Skype-->
-    <div class="tcol-1">
-        <span class="table-cell">kimk99</span>
-    </div>
-    <!--Method-->
-    <div class="tcol-1">
-        <span class="table-cell">skype</span>
-    </div>
-    <!--Request-->
-    <div class="tcol-3">
-        <span class="table-cell">Can you improve my sites security?</span>
-    </div>
-</div>
+

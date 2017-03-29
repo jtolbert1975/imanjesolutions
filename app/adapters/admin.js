@@ -1,4 +1,4 @@
-import DS from 'ember-data';
+//import DS from 'ember-data';
 import FirebaseAdapter from 'emberfire/adapters/firebase';
 //import ApplicationAdapter from './application';
 

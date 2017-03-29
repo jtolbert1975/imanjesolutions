@@ -4,6 +4,7 @@
 .t-table{
   width: 100.1%;
   margin: 6.5px auto;
+
 }
 .theader {
   border: 1px solid #090909;
@@ -26,6 +27,7 @@
   float: left;
   padding: 15px;
   border: 1px solid #090909;
+  min-height: 52px;
 }
 .tcol-1 {width: 8.33%;}
 .tcol-2 {width: 16.66%;}

@@ -8,6 +8,19 @@
   border-radius: 100px / 50px;
 }
 
+.top_margin{
+  margin-top: 15px;
+}
+
+.about-title{
+  font-weight: bold;
+  font-size: 4.25em;
+  font-family: $header-text;
+  color: $banner-navy;
+  padding: 0px 44px;
+}
+
+
 .about-logo {
   margin-top: -50px;
 }
@@ -21,6 +34,129 @@
 }
 
 .img-size {
-  width: 200px;
-  height: 225px;
+  width: 270px;
+  height: 270px;
 }
+.process-row{
+  margin-top: 10px;
+}
+.process-title{
+  font-size: 1.95em;
+  font-family: $reg-text;
+  font-weight: bold;
+  padding: 0px 10px;
+  vertical-align: bottom;
+}
+
+.process-img{
+  width: 75px;
+  height: 75px;
+
+}
+
+.process-text{
+  font-family: $reg-text;
+  vertical-align: bottom;
+  padding-right: 10px;
+  font-size: .8em !important;
+  font-weight: 200 !important;
+  color: $trump-navy;
+
+}
+
+.process-title_alien{
+  font-size: 1.95em;
+  font-family: $reg-text;
+  font-weight: bold;
+  padding: 0px 10px;
+  vertical-align: bottom;
+  margin-left: 10px;
+}
+
+.process-text2{
+  font-family: "Myriad Pro Regular";
+  vertical-align: bottom;
+  padding-right: 10px;
+  font-size: .8em !important;
+  font-weight: 200 !important;
+  color: $trump-navy;
+  margin: -33px 109px;
+  display: flex;
+  flex-flow: column;
+  flex: 1 0 auto;
+  width: 419px;
+}
+
+.celltower{
+  width: 60px;
+}
+
+.process-link{
+  color: $menuBtn-blue;
+  text-decoration: underline;
+  margin: 5px 208px;
+  display: flex;
+  justify-content: flex-end;
+  width: 223px;
+
+    a{
+      color: $menuBtn-blue;
+    }
+}
+
+.alien{
+  width: 54px;
+  height: 95px;
+  margin-right: 59px;
+  margin-top: -93px;
+}
+
+.meet-title {
+  margin-left: 21px;
+
+}
+
+.meet-text{
+  width: 449px;
+  margin-left: 120px;
+}
+
+.meet{
+  width: 54px;
+  height: 95px;
+  margin-right: 22px;
+  margin-top: -93px;
+}
+
+.agreement-title{
+  margin-left: 36px;
+}
+
+.agreement-text{
+  margin-left: 130px;
+  width: 494px;
+}
+
+.agreement{
+  width: 54px;
+  height: 95px;
+  margin-right: -23px;
+  margin-top: -93px;
+}
+
+.thumbsup-title{
+  margin-left: 59px;
+}
+
+.thumbsup-text{
+  width: 521px;
+  margin-left: 155px;
+}
+
+.thumbsup{
+  width: 54px;
+  height: 95px;
+  margin-right: 19px;
+  margin-top: -93px;
+}
+
