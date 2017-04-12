@@ -1,125 +1,4 @@
 
-.intro-row {
-  margin-top: 57px;
-}
-.intro-bold {
-  font-weight: bold;
-  font-style: italic;
-  font-size: 1.25em;
-}
-
-.intro-top{
-  margin-top: 25px;
-}
-
-.info-square{
-  width: 225px;
-  height: 225px;
-  margin-left: 45px;
-  margin-left: 45px;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
-
-}
-
-.info-square :hover{
-  cursor: pointer;
-}
-
-.intro-click-text{
-  font-size: 1.15em;
-  text-decoration: underline;
-  color: #FFFFFF;
-}
-
-.intro-click-text:hover{
-  font-size: 1.65em;
-  text-align: center;
-  color: $imanje-black
-}
-
-.mintSqr1-box{
- border: 1px solid $mint-green;
-}
-
-.mintSqr1 {
-  background-image: url("/assets/images/mintsqr1.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
-.mintSqr1-list{
-  font-size: 1em;
-  margin-left: -6px;
-  font-family: $reg-text;
-
-    li{
-      padding: 3px 0px;
-    }
-}
-
-.mintSqr1-list_title{
-  text-decoration: underline;
-  font-weight: bold
-}
-
-.skySqr1{
-  background-image: url("/assets/images/skySqr1.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-
-}
-
-.skySqr1-box{
-  border: 1px solid $menuBtn-blue;
-}
-
-.purpleSqr{
-  background-image: url("/assets/images/purpleSqr.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
-.purpleSqr-box{
-  border: 1px solid #8260C2;
-}
-
-.yellowSqr{
-  background-image: url("/assets/images/yellowSqr.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
-.yellowSqr-box{
-  border: 1px solid #FFD700;
-}
-
-.info-square_text{
-  font-size: 1.25em;
-  color: #ffffff;
-  display: flex;
-  flex-flow: row;
-
-
-
-}
-
-.info-square_text:hover{
-  font-size: 1.75em;
-  text-align: center;
-}
-
-.more-info-row{
-
-
-}
-
-.more-info-row a{
-  font-size: 1.15em;
-  text-decoration: underline;
-}
 
 .landing-img{
   margin: 10px 25px;
@@ -169,5 +48,31 @@
   font-family: "Myriad Pro Regular";
   color: #030721;
   padding: 0px 12px 0px 12px;
+}
+
+.landing-intro-top{
+  margin-top: 25px;
+}
+
+
+@media all and (max-width: 768px) {
+  .landing-img{
+    display: none;
+  }
+  .landing-container{
+    margin-top: -70px;
+  }
+
+  .landing-enter_button{
+    height: 68px;
+    width: 177px;
+    margin: -31px auto 0px auto;
+
+      a{
+        font-size: 36.444px;
+      }
+  }
+
+
 }
 

@@ -7,16 +7,33 @@
     //$mint-green;
   }
 
+  .folio-title_row{
+    text-align: center;
+  }
+
+
+  .folio-title{
+    margin: -35px 19px 0px 19px;
+  }
+
+  .gallery-row{
+    display: flex;
+    flex-flow: column;
+    margin: 10px auto;
+  }
+
   .card{
-    width: 270px;
-    height: 514px;
+    width: 191px;
+    height: 251px;
     border: 2px solid #030721;
-    margin: 5%;
+    margin: 10px auto;
 
-     img{
-       margin-top: 5%;
-     }
-
+      img {
+        //margin-top: 5%;
+        width: 82%;
+        height: 228px;
+        margin: 8% 8% 4% 8%;
+      }
 
   }
 
@@ -26,18 +43,12 @@
 }
 
 .card-link{
-  margin-top: 23px;
-  text-align: center;
-  font-weight: bold;
-  color: #337ab7;
-  text-decoration: underline;
+ display: none;
 
 
 }
 
-.card-link:hover{
-  color: $menuBtn-blue;
-}
+
 
 .card-icon {
   width: 35px;
@@ -54,5 +65,67 @@
       padding: 0px 12px 3px 12px;
     }
 }
+
+@media all and (min-width: 768px) {
+   .folio{
+     .gallery-row{
+       display: flex;
+       flex-flow: row;
+       margin: 10px auto;
+     }
+
+     .card-link{
+       display: inline-block;
+
+
+     }
+
+     .card-icon{
+       width: 35px !important;
+       margin: 0px 5px;
+       height: 35px !important;
+     }
+   }
+}
+
+
+
+@media all and (min-width: 769px) {
+
+
+   .card-link{
+      margin-top: 23px;
+      text-align: center;
+      font-weight: bold;
+      color: #337ab7;
+      text-decoration: underline;
+    }
+
+  .card-link:hover{
+    color: $menuBtn-blue;
+  }
+
+  .card{
+    width: 270px;
+    height: 514px;
+    border: 2px solid #030721;
+    margin: 7%;
+
+      img{
+        margin-top: 5%;
+      }
+
+  }
+}
+
+@media all and (min-width: 772px) {
+   .folio {
+     .folio-title {
+       margin: 0px 19px 0px 19px;
+     }
+   }
+}
+
+
 
 

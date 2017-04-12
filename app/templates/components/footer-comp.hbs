@@ -1,30 +1,30 @@
 <footer class="footer">
     <button id="top" class="btn btn-primary pull-right toTop footer-button"><i class="fa fa-arrow-up">Back to Top</i></button>
-    <div class="row footer-content">
-        <div class="col-lg-4 footer-height">
+    <div class="footer-content">
+        <div class="footer-contact_group">
             <span class="footer-contact_text">Contact Us:</span>
             <span class="footer-contact_phone">ph:<a href="tel:+14705350600">470-535-0600</a></span>
             <span class="footer-contact_email">email: <a href="mailto:imanjesolutions@gmail.com?subject=Question">imanjesolutions@gmail.com</a></span>
         </div>
-        <div class="col-lg-3 footer-copy_column">
-            <span class="footer-copyright"> &copy; IMANJE SOLUTIONS 2017</span>
-        </div>
-        <div class="col-lg-3">
+        <div class="footer-nav-row">
             <nav>
-                <ul class="footer-nav pull-right">
+                <ul class="footer-nav">
                     {{#link-to 'home' tagName="li" class="footer--navlink"}}<a href="">Home</a>{{/link-to}}
                     {{#link-to 'about' tagName="li" class="footer--navlink"}}<a href="">About</a>{{/link-to}}
                     {{#link-to 'services' tagName="li" class="footer--navlink"}}<a href="">Services</a>{{/link-to}}
                     {{#link-to 'contact' tagName="li" class="footer--navlink"}}<a href="">Contact Us</a>{{/link-to}}
+                    {{#link-to 'folio' tagName="li" class="footer--navlink"}}<a href="">Folio</a>{{/link-to}}
                     {{#link-to 'index' tagName="li" class="footer--navlink"}}<a href="">Index</a>{{/link-to}}
                 </ul>
             </nav>
-
         </div>
-        <div class="col-lg-2 footer-freeq_col">
+        <div class="footer-freeq_col">
         {{#link-to 'contact' tagName="a" class="footer--imglink" }}
             <img src="/assets/images/freequote.png" alt="Free Quote" class="footer-img" />
         {{/link-to}}
+        </div>
+        <div class="footer-copy_column">
+            <span class="footer-copyright"> &copy; IMANJE SOLUTIONS 2017</span>
         </div>
     </div>
 </footer>

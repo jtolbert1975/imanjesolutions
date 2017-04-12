@@ -1,23 +1,42 @@
-<div class="container-fluid header">
-    <div class="row">
-        <div class="col-lg-12 rectangle_1"></div>
+<div class="d-flex flex-column header">
+    <div class="d-flex flex-row mblNav-row">
+        <div class="col-lg-12 rectangle_1">
+            <div class="navbar-mbl_menu">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile-navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                {{!-- {{#link-to 'index' class="navbar-brand brand-height"}}<img src="/assets/images/logo.png" alt="Imanje Solutions" /> {{/link-to}}--}}
+            </div>
+        </div>
+        <div class="collapse navbar-collapse col-md-6" id="mobile-navbar">
+            <ul class="nav navbar-nav nav-pills nav-stacked">
+                {{#link-to 'home' tagName="li" class=""}}<a href="">Home</a>{{/link-to}}
+                {{#link-to 'about' tagName="li" class=""}}<a href="">About</a>{{/link-to}}
+                {{#link-to 'services' tagName="li" class=""}}<a href="">Services</a>{{/link-to}}
+                {{#link-to 'contact' tagName="li" class=""}}<a href="">Contact Us</a>{{/link-to}}
+                {{#link-to 'folio' tagName="li" class=""}}<a href="">Folio</a>{{/link-to}}
+            </ul>
+        </div>
     </div>
-    <div class="row header-row">
-        <div class="col-lg-1">
+    <div class="d-flex flex-row header-row">
+        <div class="logo-column">
             <img src="/assets/images/aboutLogo.png" alt="Imanje Solutions" class="header-logo"/>
         </div>
-        <div class="col-lg-8 rt-border row-height">
+        <div class="name-column">
             <p class="name">IMANJE SOLUTIONS</p>
-            <p class="_ee___Mon___jay ">(ee - Mon - jay)  (so - lu - tions)</p>
+            <p class="ee___Mon___jay">(ee - Mon - jay)  (so - lu - tions)</p>
         </div>
-        <div class="col-lg-3 header-call_box">
+        <div class="header-call_box">
             <img src="/assets/images/callNowBg.png" alt="470-535-0600" class="header-call_img"/>
-            <p class="pull-right header-call_text">CALL NOW</p>
+            <p class="header-call_text">CALL NOW</p>
             <hr class="header-call_line">
             <p class="header-call_number"><a href="tel:+14705350600">470-535-0600</a></p>
         </div>
     </div>
-    <div class="row">
+    <div class="d-flex flex-row rectangle-row">
         <div class="col-lg-12 rectangle_2">
             <p class="moto">Tomorrow's Solutions For Today's Problems</p>
         </div>

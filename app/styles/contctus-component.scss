@@ -3,3 +3,13 @@
   min-width: 438px;
 
 }
+
+@media all and (max-width: 768px) {
+  .quote-link{
+    padding-bottom: 50px;
+  }
+
+  .panel-info{
+    margin-left: -29px;
+  }
+}

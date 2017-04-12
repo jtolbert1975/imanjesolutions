@@ -1,11 +1,11 @@
-<div class="row">
-    <div class="col-lg-offset-2 col-lg-4 top_margin">
-        <span class="about-title">Who Are We</span>
+<div class="d-flex flex-row about" xmlns="http://www.w3.org/1999/html">
+    <div class="d-flex flex-row top_margin">
+        <span class=" d-flex flex-column about-title">Who Are We</span>
     </div>
 </div>
 
 <div class="row">
-    <div class="col-lg-offset-1 col-lg-6">
+    <div class="col-lg-offset-1 col-lg-6 about-text_container">
         <p class="intro">
             <b>Imanje Solutions</b> is the vision of Web Developer, Jonathan  “JT” Tolbert.
             JT is a passionate web developer with 10 years of professional and enterprise experience.
@@ -22,50 +22,55 @@
             and provide tomorrow’s solutions for today’s problems.
         </p>
     </div>
-    <div class="col-lg-offset-2 col-lg-3">
+    <div class="about-img_container">
         <img src="/assets/images/jtHooverDam.jpg" alt="Jonathan Tolbert" class="img-circle img-size " />
     </div>
 </div>
 <hr>
 
-<div class="row process-row">
-    <div class="col-lg-offset-1 col-lg-5">
-        <span class="process-title">The Process</span><img src="/assets/images/joelEmbid.png" alt="The Process" class="process-img" />
+<div class="embid-row">
+    <div class="process-container">
+        <span class="process-title">The Process</span><img src="/assets/images/joelEmbid.png" alt="The Process" class="process-img process" />
      </div>
 </div>
-<div class="row process-row">
-    <div class="col-lg-offset-1 col-lg-5">
-        <span class="process-title">Step 1. <span class="process-text">Contact Us - Submit a Quote</span></span><img src="/assets/images/cellTower.gif" alt="Contact Us" class="process-img celltower" />
-        {{#link-to 'contact'  class="process-link"}}<a href="">Click Here</a>{{/link-to}}
-    </div>
-</div>
-<div class="row process-row">
-    <div class="col-lg-offset-1 col-lg-6">
-        <span class="process-title_alien">Step 2. <span class="process-text2">First Contact - Q&A to give clarification of our services and to gain understanding of your vision. Set up a Meet and Greet</span>
-        </span><img src="/assets/images/alien.png" alt="First Contact" class="process-img alien pull-right" />
+<div class="d-flex flex-row-nowrap cell-row">
+    <div class="col-md-7 step1">
+        <span class="process-title celltower-title">Step 1. <span class="process-text">Contact Us - Submit a Quote</span></span>
+        <span class="d-flex cell-img_container"><img src="/assets/images/cellTower.gif" alt="Contact Us" class="process-img celltower" />
+          {{#link-to 'contact'  class="process-link"}}<a href="">Click Here</a>{{/link-to}}
+        </span>
 
     </div>
 </div>
-<div class="row process-row">
-    <div class="col-lg-offset-1 col-lg-6">
-        <span class="process-title_alien meet-title">Step 3. <span class="process-text2 meet-text">Meet & Greet - Presentation of possible solutions based off of First Contact discussion. Opportunity to further gather project requirements. </span>
-        </span><img src="/assets/images/meetandgreet.png" alt="Meet and Greet" class="process-img meet pull-right" />
+<div class="d-flex flex-row-nowrap process-row">
+    <div class="col-md-6 first-contact_height process-step">
+        <span class="process-title alien-title">Step 2. <span class="process-text2 ">First Contact - Q&A to give clarification of our services and to gain understanding of your vision. Set up a Meet and Greet</span>
+        </span>
+        <span class="d-flex alien-img_container"><img src="/assets/images/alien.png" alt="First Contact" class="process-img alien" /></span>
 
     </div>
 </div>
-<div class="row process-row">
-    <div class="col-lg-offset-1 col-lg-6">
-        <span class="process-title_alien agreement-title">Step 4. <span class="process-text2 agreement-text">Work Agreement - Once a solution is agreed upon. We will establish a time line. Sign a statemtent of work and Contract. Deposit due at this time. </span>
-        </span><img src="/assets/images/contract.png" alt="Work Agreement" class="process-img agreement pull-right" />
+<div class="d-flex flex-row-nowrap process-row">
+    <div class="col-md-6 process-step">
+        <span class="process-title meet-title">Step 3. <span class="process-text2 meet-text">Meet & Greet - Presentation of possible solutions based off of First Contact discussion. Opportunity to further gather project requirements. </span>
+        </span><span class="d-flex meet-img_container"><img src="/assets/images/meetandgreet.png" alt="Meet and Greet" class="process-img meet" /></span>
 
     </div>
 </div>
-<div class="row process-row">
-    <div class="col-lg-offset-1 col-lg-7">
-        <span class="process-title_alien thumbsup-title">Step 5. <span class="process-text2 thumbsup-text">Develop, Test, Deploy - Development begins per timeline. Each milestone is completed with your approval. After testing and your final approval, your project is deployed. Final payment due.</span>
-        </span><img src="/assets/images/thumbsup.png" alt="Meet and Greet" class="process-img thumbsup pull-right" />
+<div class="d-flex flex-row-nowrap process-row">
+    <div class="col-lg-offset-1 col-md-6 process-step">
+        <span class="process-title agreement-title">Step 4. <span class="process-text2 agreement-text">Work Agreement - Once a solution is agreed upon. We will establish a time line. Sign a statemtent of work and Contract. Deposit due at this time. </span>
+        </span><span class="agreement-img_container"><img src="/assets/images/contract.png" alt="Work Agreement" class="process-img agreement" /></span>
 
     </div>
 </div>
+<div class="d-flex flex-row-nowrap process-row">
+    <div class="col-md-6 process-step thumbsup-group">
+        <span class="process-title thumbsup-title">Step 5. <span class="process-text2 thumbsup-text">Develop, Test, Deploy - Development begins per timeline. Each milestone is completed with your approval. After testing and your final approval, your project is deployed. Final payment due.</span>
+        </span><span class="thumbsup-img_container"><img src="/assets/images/thumbsup.png" alt="Meet and Greet" class="process-img thumbsup" /></span>
+
+    </div>
+</div>
+<div class="d-flex flex-row-nowrap bottom-row"></div>
 
 

@@ -1,15 +1,15 @@
 <div class="row">
-    <div class="col-lg-offset-3 col-lg-6">
+    <div class="col-sm-offset-3 col-sm-9 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">
         <p class="intro intro-top">
             <span class="intro-bold">Imanje Solutions</span>, located in <i>Lawrenceville,GA</i> is a web consulting firm whose goal is providing sound,
-            innovative solutions for your Website , Web App, Social Networking and Branding
+            innovative solutions for your Website, Web App, Social Networking and Branding
             needs. If your needs are a modern innovative web solution from start to finish, or some extra
             hands to steer your project across the finish line, Imanje Solutions is here to help.
         </p>
     </div>
 </div>
-<div class="row intro-row">
-    <div class="col-lg-2">
+<div class="intro-row">
+  <div class="col-lg-2">
         {{#if isWebdesign}}
             <div class="info-square mintSqr1" {{action 'toggleSquare'}}>
                 <p class="info-square_text">Web Design</p>
@@ -30,7 +30,7 @@
             </div>
         {{/if}}
     </div>
-    <div class="col-lg-offset-1 col-lg-2">
+    <div class="col-lg-2">
         {{#if isWebApp}}
             <div class="info-square skySqr1" {{action 'toggleApp'}}>
                 <p class="info-square_text">Web App Development</p>
@@ -49,7 +49,7 @@
             </div>
         {{/if}}
     </div>
-    <div class="col-lg-offset-1 col-lg-2">
+    <div class="col-lg-2">
         {{#if isSocial}}
             <div class="info-square purpleSqr" {{action 'toggleSocial'}}>
                 <p class="info-square_text">Social Media Marketing</p>
@@ -69,7 +69,7 @@
             </div>
         {{/if}}
     </div>
-    <div class="col-lg-offset-1 col-lg-2">
+    <div class="col-lg-2">
         {{#if isBranding}}
             <div class="info-square yellowSqr" {{action 'toggleBrand'}}>
                 <p class="info-square_text">Branding Services</p>
@@ -89,18 +89,24 @@
             </div>
         {{/if}}
     </div>
+    <div class="col-lg-offset-1 col-lg-1 info-link_mobile">
+        {{#link-to 'services' tagName="a"}}<a href="" alt="For More Info">For More Info</a>{{/link-to}}
+    </div>
 </div>
-<div class="row more-info-row">
-    <div class="col-lg-offset-1 col-lg-1 info-link">
+<div class="d-flex flex-row more-info-row">
+  <!--  <div class="col-lg-offset-1 col-lg-1 info-link_mobile">
+        {{#link-to 'services' tagName="a"}}<a href="" alt="For More Info">For More Info</a>{{/link-to}}
+    </div>-->
+    <div class="info-link info-link_one">
+        {{#link-to 'services' tagName="a"}}<a href="" alt="For More Info">For More Info</a>{{/link-to}}
+    </div>
+    <div class="info-link info-link_two">
         {{#link-to 'services' tagName="a"}}<a href="" alt="For More Info">More Info</a>{{/link-to}}
     </div>
-    <div class="col-lg-offset-2 col-lg-1 info-link">
+    <div class="info-link info-link_three">
         {{#link-to 'services' tagName="a"}}<a href="" alt="For More Info">More Info</a>{{/link-to}}
     </div>
-    <div class="col-lg-offset-2 col-lg-1 info-link">
-        {{#link-to 'services' tagName="a"}}<a href="" alt="For More Info">More Info</a>{{/link-to}}
-    </div>
-    <div class="col-lg-offset-2 col-lg-1 info-link">
+    <div class="info-link info-link_four">
         {{#link-to 'services' tagName="a"}}<a href="" alt="For More Info">More Info</a>{{/link-to}}
     </div>
 </div>

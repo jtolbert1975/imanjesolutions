@@ -1,11 +1,15 @@
-<h2 class="text-center">What We Do</h2>
-<div class="text-center about-logo__height">
+<h2 class="text-center services-title container-top" >What We Do</h2>
+<!--<div class="text-center about-logo__height">
     <img src="/assets/images/aboutLogo.png" alt="Imanje Solutions" class="about-logo"/>
-</div>
-<div class="container-fluid">
+</div>-->
+<div class="container-fluid services-container">
     <div class="row text-center">
-     <div class="col-md-offset-3 col-lg-6 service-drawer web">
-         <a href="#" Id="dev" {{action 'titleClick' this}}> <span class="glyphicon glyphicon-plus pull-right plus-button"></span></a>
+     <div class="col-md-offset-2 col-md-8  col-lg-offset-3 col-lg-6  service-drawer web">
+         {{#if isActive}}
+             <a href="#" Id="dev" {{action 'titleClick' this}}> <span class="glyphicon glyphicon-minus pull-right plus-button"></span></a>
+         {{else}}
+             <a href="#" Id="dev" {{action 'titleClick' this}}> <span class="glyphicon glyphicon-plus pull-right plus-button"></span></a>
+         {{/if}}
         <a href="#" Id="dev" {{action 'titleClick' this}}><h2>Website Development</h2></a>
         <ul class="services__list isActive  {{if isActive "dev-open" "notactive"}}">
             <li>Custom Website Design and Development</li>
@@ -18,8 +22,12 @@
      </div>
     </div>
    <div class="row text-center">
-       <div class="col-md-offset-3 col-lg-6 service-drawer">
-        <a href="#" {{action 'appsClick' this}}> <span class="glyphicon glyphicon-plus pull-right plus-button"></span></a>
+       <div class="col-md-offset-2 col-md-8  col-lg-offset-3 col-lg-6  service-drawer">
+           {{#if isApps}}
+              <a href="#" {{action 'appsClick' this}}> <span class="glyphicon glyphicon-minus pull-right plus-button"></span></a>
+           {{else}}
+                <a href="#" {{action 'appsClick' this}}> <span class="glyphicon glyphicon-plus pull-right plus-button"></span></a>
+           {{/if}}
         <a href="#" {{action 'appsClick' this}}><h2 id="app">Web Applications</h2></a>
         <ul class="services__list apps {{if isApps "dev-open" "notactive"}}">
             <li>Mobile Web Applications - Deisgn and Development</li>
@@ -32,8 +40,12 @@
        </div>
     </div>
    <div class="row text-center">
-     <div class="col-md-offset-3 col-lg-6 service-drawer">
-     <a href="#" {{action 'netClick' this}}><span class="glyphicon glyphicon-plus pull-right plus-button"></span></a>
+     <div class="col-md-offset-2 col-md-8  col-lg-offset-3 col-lg-6  service-drawer">
+         {{#if isNet}}
+            <a href="#" {{action 'netClick' this}}><span class="glyphicon glyphicon-minus pull-right plus-button"></span></a>
+         {{else}}
+            <a href="#" {{action 'netClick' this}}><span class="glyphicon glyphicon-plus pull-right plus-button"></span></a>
+         {{/if}}
         <a href="#" {{action 'netClick' this}}><h2 id="net">Social Media Marketing</h2></a>
         <ul class="services__list net {{if isNet "dev-open" "notactive"}}">
             <li>SEO/Google Analytics</li>
@@ -46,8 +58,12 @@
      </div>
    </div>
   <div class="row text-center">
-    <div class="col-md-offset-3 col-lg-6 service-drawer brand">
-        <a href="#" {{action 'brandClick' this}}> <span class="glyphicon glyphicon-plus pull-right plus-button"></span></a>
+    <div class="col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  service-drawer brand">
+        {{#if isBrand}}
+             <a href="#" {{action 'brandClick' this}}> <span class="glyphicon glyphicon-minus pull-right plus-button"></span></a>
+        {{else}}
+             <a href="#" {{action 'brandClick' this}}> <span class="glyphicon glyphicon-plus pull-right plus-button"></span></a>
+        {{/if}}
         <a href="#" {{action 'brandClick' this}}><h2 id="brand">Branding Services</h2></a>
         <ul class="services__list net {{if isBrand "dev-open" "notactive"}}">
             <li>Graphic Design</li>
