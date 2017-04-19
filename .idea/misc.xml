@@ -3,9 +3,4 @@
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
   </component>
-  <component name="PhpUnit">
-    <phpunit_settings>
-      <PhpUnitSettings load_method="PHPUNIT_PHAR" custom_loader_path="$USER_HOME$/PhpstormProjects/lilburnsupersonics/composer.phar" phpunit_phar_path="/Applications/MAMP/bin/php/php5.6.10/lib/php/phpunit.phar" />
-    </phpunit_settings>
-  </component>
 </project>

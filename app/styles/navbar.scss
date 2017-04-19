@@ -1,6 +1,6 @@
 .brand-height{
   height: 100%;
-}
+}184
 
 .header__title {
   color: #e2e3e9;
@@ -67,8 +67,6 @@
 
 
 .navbar-inverse .navbar-nav >  a:link {
-
-
   border-radius: 4px 4px 4px 4px;
 }
 
@@ -112,7 +110,7 @@
   display: flex;
   flex-flow: row;
   justify-content: center;
-  align-items: baseline;
+  align-items: flex-end;
 }
 
 .navbar-mbl_menu {
@@ -136,10 +134,13 @@
   }
 }
 
-@media all and (max-width: 768px){
-   .header__nav-list {
-     font-size: .5em;
-   }
+@media all and (max-width: 767px){
+  .navbar{
+    display: none;
+  }
+  .header__nav-list {
+    font-size: .5em;
+  }
 
   .navbar-mbl_menu {
     display: flex;
@@ -172,10 +173,51 @@
     margin: 0px auto;
     font-family: "Perpetua Titling MT";
   }
-}// end of max-width: 768px
+}// end of max-width: 767px
+
+@media all and (min-width: 768px) {
+  .nav-stacked{
+    display: none;
+  }
+  .navbar{
+    height: 99px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin-bottom: 0px;
+  }
+
+  .nav-row{
+    height: 97px;
+    align-items: center;
+    padding: 10px;
+    margin-top: 5px;
+  }
+
+  .menu-row{
+    height: 31px;
+  }
+}
 
 @media all and (min-width: 991px ){
   .mblNav-row{
     height: 0px;
   }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-color-index: 0) {
+
+  .navbar{
+    //margin-bottom: 0px;
+   // margin-top: 50px;
+  }
+
+  .nav-row{
+    height: 96px;
+    align-items: center;
+    padding: 20px;
+    margin-top: 5px;
+  }
+
+
 }

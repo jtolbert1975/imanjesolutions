@@ -1,7 +1,32 @@
-.content-container{
- /* max-width: 90%;
-  border: 2px solid #030721;
-  min-height: 960px;
-  margin: 211px auto;*/
-
+.app-container{
+  display: flex;
+  flex-flow: column;
+  flex: 1 0 auto;
+  margin: 0px auto;
 }
+.content-container {
+  margin-top: 0px;
+}
+
+@media all and (min-width: 480px) and (max-width: 767px) {
+  //.content-container {
+    //margin-top: 80px;
+ // }
+}
+
+@media all and (min-width: 768px) {
+  .content-container {
+    margin-top: 0px;
+  }
+}
+
+//@media all and (min-width: 480px) and (max-width: 767px){
+  @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-color-index: 0) {
+    .content-container {
+      margin-top: 0px;
+    }
+
+  }
+//}
+
+//margin-top: -50px

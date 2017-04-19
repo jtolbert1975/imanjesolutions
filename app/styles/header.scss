@@ -1,6 +1,6 @@
 .header{
   font-family: "Mistral";
-  margin-top: -20px;
+  //margin-top: -20px;
 }
 
 .header-row{
@@ -78,7 +78,9 @@
   margin: 23px -27px;
   flex-flow: row;
   text-align: center;
-  //width: calc(100% + 21%);
+  width: 250px;
+  height: 5px;
+
 }
 
 .rt-border{
@@ -135,9 +137,16 @@
 
 
 @media all and (min-width: 480px) and (max-width: 768px) {
+  .header{
+    //height: 320px;
+  }
+  .name-column{
+    width: 75%;
+  }
    .name {
      font-size: 3.75em;
      margin: 17px -27px;
+     width: 338px;
    }
 }
 
@@ -147,7 +156,7 @@
   .header__nav-list{
     font-family: "Perpetua Titling MT";
     font-weight: bold;
-    font-size: .55em;
+    font-size: .95em;
     list-style: none;
     display: flex;
     flex-flow: row;
@@ -156,6 +165,7 @@
     padding: 0px;
     height: 56px;
     margin-bottom: 43px;
+    align-items: flex-start;
   }
 }
 
@@ -171,23 +181,13 @@
 //Tablet Breakpoint
 
 @media all and (min-width: 768px) {
-  .nav-stacked{
-    display: none;
-  }
-
-  .menu-row{
-    height: 31px;
-  }
-
-
-
 .logo-column{
   display: flex;
   flex-flow: column;
   flex: 0 1 auto;
-  height: 90%;
-  width: 21%;
-  max-width: 100px;
+  height: 95%;
+  width: 22%;
+  max-width: 102px;
   order: 0;
   margin-top: 42px;
 }
@@ -204,17 +204,17 @@
 
   .name{
     display: flex;
-    margin: 14px -8px;
+    margin: 33px 8px 9px -8px;
     font-size: 4.4em;
     font-family: "Mistral";
-    color: $banner-text;
-    //rgb(7, 104, 237);
+    color: #0768ED;
     line-height: 1.2;
-    //text-align: left;
-    -moz-transform: matrix( 0.66666666666667,0,0,0.7810546875,0,0);
-    -webkit-transform: matrix( 0.66666666666667,0,0,0.7810546875,0,0);
-    -ms-transform: matrix( 0.66666666666667,0,0,0.7810546875,0,0);
+    -moz-transform: matrix(0.66667, 0, 0, 0.78105, 0, 0);
+    -webkit-transform: matrix(0.66667, 0, 0, 0.78105, 0, 0);
+    -ms-transform: matrix(0.66667, 0, 0, 0.78105, 0, 0);
     align-self: center;
+    width: 397px;
+    height: 60px;
   }
 
   .ee___Mon___jay {
@@ -239,7 +239,7 @@
 
   .rectangle_1 {
     height: 30px;
-    margin-top: -10px;
+    //margin-top: -10px;
 
   }
 
@@ -247,9 +247,8 @@
     display: flex;
     flex-flow: column;
     flex: 1 0 auto;
-    align-items: end;
+    align-items: flex-end;
     margin: -15px 68%;
-    align-self: end;
     width: 30%;
 
   }
@@ -302,6 +301,7 @@
 
   .rectangle-row {
     height: 74px;
+    margin-bottom: 20px;
   }
   .rectangle_2{
     margin-top: 0px;
@@ -327,3 +327,6 @@
     height: 88%;
   }
 }
+
+
+
