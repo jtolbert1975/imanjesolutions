@@ -66,6 +66,12 @@
     }
 }
 
+@media all and (min-width: 320px) and(max-width: 479px){
+  .folio{
+    margin-top: 44px;
+  }
+}
+
 @media all and (min-width: 768px) {
    .folio{
      .gallery-row{
@@ -125,10 +131,6 @@
 
 
 @media all and (min-width: 769px) {
-
-
-
-
   .card{
     width: 270px;
     height: 514px;
@@ -150,6 +152,11 @@
    }
 }
 
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-color-index: 0) {
+  .folio{
+    margin-top: 0px;
+  }
 
+}
 
 
