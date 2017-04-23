@@ -20,23 +20,23 @@
 
     <script src="{{rootURL}}assets/vendor.js"></script>
     <script src="{{rootURL}}assets/imanjesolutions.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-database.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-messaging.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase-messaging.js"></script>
 
     <script>
-      var config = {
-        apiKey: "AIzaSyBV5xwkS-4i9Lsv5nxLsuZJr3RFSojXa6Q",
-        authDomain: "imanje-cefa4.firebaseapp.com",
-        contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
-        databaseURL: "https://imanje-cefa4.firebaseio.com",
-        storageBucket: "imanje-cefa4.appspot.com",
-        messagingSenderId: "138960442912"
-      };
-
-      firebase.initializeApp(config);
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyABYS6u4q3xzZD5UgHIO4ewYWcr462BEu4",
+            authDomain: "imanje-solutions-1943a.firebaseapp.com",
+            databaseURL: "https://imanje-solutions-1943a.firebaseio.com",
+            projectId: "imanje-solutions-1943a",
+            storageBucket: "imanje-solutions-1943a.appspot.com",
+            messagingSenderId: "44721718433"
+        };
+        firebase.initializeApp(config);
     </script>
 
     {{content-for "body-footer"}}

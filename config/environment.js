@@ -20,12 +20,15 @@ module.exports = function(environment) {
     },//EmberENV
 
     firebase: {
-      apiKey: "AIzaSyBV5xwkS-4i9Lsv5nxLsuZJr3RFSojXa6Q",
-      authDomain: "imanje-cefa4.firebaseapp.com",
-      contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
-      databaseURL: "https://imanje-cefa4.firebaseio.com",
-      storageBucket: "imanje-cefa4.appspot.com",
-      messagingSenderId: "138960442912"
+        apiKey: "AIzaSyABYS6u4q3xzZD5UgHIO4ewYWcr462BEu4",
+        authDomain: "imanje-solutions-1943a.firebaseapp.com",
+        databaseURL: "https://imanje-solutions-1943a.firebaseio.com",
+        projectId: "imanje-solutions-1943a",
+        storageBucket: "imanje-solutions-1943a.appspot.com",
+        messagingSenderId: "44721718433"
+
+      //contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+
     },
 
     APP: {
