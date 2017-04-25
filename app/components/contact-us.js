@@ -78,6 +78,9 @@ export default Ember.Component.extend({
             //this.get('router').transitionTo('thankyou');
             var tabName = "quotes";
             this.sendAction('showTab', tabName);
+            this.toggleProperty('isShown');
+            this.toggleProperty('isSubmitted');
+
 
             //return true;
         },
