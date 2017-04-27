@@ -80,6 +80,13 @@ export default Ember.Component.extend({
             this.sendAction('showTab', tabName);
             this.toggleProperty('isShown');
             this.toggleProperty('isSubmitted');
+            this.set('fname', '');
+            this.set('lname', '');
+                this.set('email', '');
+                this.set('phone', '');
+                this.set('skype', '');
+                this.set('selectedContctMethd', '');
+                this.set('request', '');
 
 
             //return true;

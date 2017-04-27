@@ -88,6 +88,18 @@ export default Ember.Component.extend({
 
             newQuote.save();
             this.get('router').transitionTo('thankyou');
+           this.set('name', '');
+               this.set('email', '');
+                 this.set('phone', '');
+                 this.set('about', '');
+               this.set('selectedBudget', '');
+                this.set('web_address', '');
+                 this.set('selectedPages', '');
+                this.set('description', '');
+                 this.set('features', '');
+                 this.set('example1', '');
+                 this.set('example2', '');
+               this.set('example3'), '';
 
             //return true;
         },

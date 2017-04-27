@@ -4,8 +4,7 @@
     <list default="true" id="38c3ba5c-7134-4cba-9740-9d343357397b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/contact-us.js" afterPath="$PROJECT_DIR$/app/components/contact-us.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/header.scss" afterPath="$PROJECT_DIR$/app/styles/header.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/components/contact-form.hbs" afterPath="$PROJECT_DIR$/app/templates/components/contact-form.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/quote-form.js" afterPath="$PROJECT_DIR$/app/components/quote-form.js" />
     </list>
     <ignored path="imanjesolutions.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/app/templates/components/contact-form.hbs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="117">
-              <caret line="30" column="80" lean-forward="true" selection-start-line="30" selection-start-column="80" selection-end-line="30" selection-end-column="80" />
+              <caret line="30" column="80" lean-forward="false" selection-start-line="30" selection-start-column="80" selection-end-line="30" selection-end-column="80" />
               <folding />
             </state>
           </provider>
@@ -59,7 +58,7 @@
         <entry file="file://$PROJECT_DIR$/app/components/submit-button.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="294">
-              <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+              <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -69,17 +68,27 @@
         <entry file="file://$PROJECT_DIR$/app/styles/header.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="741">
-              <caret line="320" column="24" lean-forward="true" selection-start-line="320" selection-start-column="24" selection-end-line="320" selection-end-column="24" />
+              <caret line="320" column="24" lean-forward="false" selection-start-line="320" selection-start-column="24" selection-end-line="320" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact-us.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="contact-us.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/components/contact-us.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="82" column="0" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+            <state relative-caret-position="150">
+              <caret line="79" column="48" lean-forward="false" selection-start-line="79" selection-start-column="48" selection-end-line="79" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="quote-form.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/components/quote-form.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="95" column="44" lean-forward="true" selection-start-line="95" selection-start-column="44" selection-end-line="95" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -99,7 +108,7 @@
         <entry file="file://$PROJECT_DIR$/app/components/contact-form.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+              <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -109,7 +118,7 @@
         <entry file="file://$PROJECT_DIR$/app/templates/components/contact-us.hbs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
-              <caret line="42" column="52" lean-forward="true" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
+              <caret line="42" column="52" lean-forward="false" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -138,9 +147,11 @@
       <find>header</find>
       <find>call</find>
       <find>call_box</find>
+      <find>get</find>
     </findStrings>
     <replaceStrings>
       <replace>flex-end</replace>
+      <replace>set</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -159,7 +170,6 @@
         <option value="$PROJECT_DIR$/app/templates/components/quotes-list.hbs" />
         <option value="$PROJECT_DIR$/app/services/record.js" />
         <option value="$PROJECT_DIR$/vendor/manifest/manifest.json" />
-        <option value="$PROJECT_DIR$/app/components/quote-form.js" />
         <option value="$PROJECT_DIR$/app/components/quotes-list.js" />
         <option value="$PROJECT_DIR$/app/adapters/application.js" />
         <option value="$PROJECT_DIR$/app/app.js" />
@@ -200,6 +210,7 @@
         <option value="$PROJECT_DIR$/app/styles/header.scss" />
         <option value="$PROJECT_DIR$/app/templates/components/contact-form.hbs" />
         <option value="$PROJECT_DIR$/app/components/contact-us.js" />
+        <option value="$PROJECT_DIR$/app/components/quote-form.js" />
       </list>
     </option>
   </component>
@@ -469,12 +480,12 @@
       <workItem from="1491357483209" duration="40265000" />
       <workItem from="1491800309231" duration="9857000" />
       <workItem from="1491933630960" duration="28317000" />
-      <workItem from="1492755117483" duration="10589000" />
+      <workItem from="1492755117483" duration="11963000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128664000" />
+    <option name="totallyTimeSpent" value="130038000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -552,24 +563,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/templates/index.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/components/footer-comp.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/quote-form.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -886,9 +883,9 @@
         <state relative-caret-position="169">
           <caret line="38" column="44" lean-forward="false" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
           <folding>
-            <marker date="1492980935000" expanded="true" signature="1941:2993" ph="..." />
-            <marker date="1492980935000" expanded="true" signature="2495:2976" ph="..." />
-            <marker date="1492980935000" expanded="true" signature="2549:2922" ph="{&quot;apiKey&quot;: &quot;AIzaSyABYS6u4q3xzZD5UgHIO4ewYWcr462BEu4&quot;...}" />
+            <marker date="1493185902000" expanded="true" signature="1941:2993" ph="..." />
+            <marker date="1493185902000" expanded="true" signature="2495:2976" ph="..." />
+            <marker date="1493185902000" expanded="true" signature="2549:2922" ph="{&quot;apiKey&quot;: &quot;AIzaSyABYS6u4q3xzZD5UgHIO4ewYWcr462BEu4&quot;...}" />
           </folding>
         </state>
       </provider>
@@ -904,7 +901,7 @@
     <entry file="file://$PROJECT_DIR$/app/styles/header.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="741">
-          <caret line="320" column="24" lean-forward="true" selection-start-line="320" selection-start-column="24" selection-end-line="320" selection-end-column="24" />
+          <caret line="320" column="24" lean-forward="false" selection-start-line="320" selection-start-column="24" selection-end-line="320" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -912,7 +909,7 @@
     <entry file="file://$PROJECT_DIR$/app/templates/components/contact-form.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
-          <caret line="30" column="80" lean-forward="true" selection-start-line="30" selection-start-column="80" selection-end-line="30" selection-end-column="80" />
+          <caret line="30" column="80" lean-forward="false" selection-start-line="30" selection-start-column="80" selection-end-line="30" selection-end-column="80" />
           <folding />
         </state>
       </provider>
@@ -920,7 +917,7 @@
     <entry file="file://$PROJECT_DIR$/app/components/submit-button.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
-          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -928,7 +925,7 @@
     <entry file="file://$PROJECT_DIR$/app/templates/components/contact-us.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
-          <caret line="42" column="52" lean-forward="true" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
+          <caret line="42" column="52" lean-forward="false" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
           <folding />
         </state>
       </provider>
@@ -936,15 +933,31 @@
     <entry file="file://$PROJECT_DIR$/app/components/contact-form.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/components/contact-us.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="82" column="0" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+        <state relative-caret-position="150">
+          <caret line="79" column="48" lean-forward="false" selection-start-line="79" selection-start-column="48" selection-end-line="79" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/quotes-modal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/quote-form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="95" column="44" lean-forward="true" selection-start-line="95" selection-start-column="44" selection-end-line="95" selection-end-column="44" />
           <folding />
         </state>
       </provider>
