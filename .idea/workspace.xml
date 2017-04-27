@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="38c3ba5c-7134-4cba-9740-9d343357397b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/quote-form.js" afterPath="$PROJECT_DIR$/app/components/quote-form.js" />
-    </list>
+    <list default="true" id="38c3ba5c-7134-4cba-9740-9d343357397b" name="Default" comment="" />
     <ignored path="imanjesolutions.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -85,8 +83,8 @@
       <file leaf-file-name="quote-form.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/components/quote-form.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="101" column="38" lean-forward="false" selection-start-line="101" selection-start-column="38" selection-end-line="101" selection-end-column="38" />
+            <state relative-caret-position="382">
+              <caret line="104" column="10" lean-forward="true" selection-start-line="104" selection-start-column="10" selection-end-line="104" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -478,12 +476,12 @@
       <workItem from="1491357483209" duration="40265000" />
       <workItem from="1491800309231" duration="9857000" />
       <workItem from="1491933630960" duration="28317000" />
-      <workItem from="1492755117483" duration="12864000" />
+      <workItem from="1492755117483" duration="13128000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130939000" />
+    <option name="totallyTimeSpent" value="131203000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -496,6 +494,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="173" y="23" width="1188" height="813" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298272" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2268761" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -953,8 +952,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/components/quote-form.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="101" column="38" lean-forward="false" selection-start-line="101" selection-start-column="38" selection-end-line="101" selection-end-column="38" />
+        <state relative-caret-position="382">
+          <caret line="104" column="10" lean-forward="true" selection-start-line="104" selection-start-column="10" selection-end-line="104" selection-end-column="10" />
           <folding />
         </state>
       </provider>
