@@ -99,7 +99,7 @@ export default Ember.Component.extend({
                  this.set('features', '');
                  this.set('example1', '');
                  this.set('example2', '');
-               this.set('example3'), '';
+               this.set('example3', '');
 
             //return true;
         },
