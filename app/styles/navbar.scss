@@ -205,6 +205,12 @@
   }
 }
 
+@media all and (min-width: 1200px) {
+  .mblNav-row {
+     height: 1px;
+  }
+}
+
 @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-color-index: 0) {
 
   .navbar{
