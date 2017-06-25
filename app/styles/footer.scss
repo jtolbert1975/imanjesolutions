@@ -152,6 +152,10 @@
     padding: 2px 4px 2px 8px;
   }
 
+  .footer-hide{
+    display: none !important;
+  }
+
   @media all and (max-width: 767px) {
       #top{
         display: none;

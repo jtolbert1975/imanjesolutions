@@ -3,11 +3,30 @@ import Ember from 'ember';
 export default Ember.Component.extend({
 
     classNames: [`toTop`],
+    routing: Ember.inject.service('-routing'),
+    isIndex: '',
+
+
+    init(){
+        this._super(...arguments);
+
+
+    },
+
 
 
     didInsertElement(){
-       // $("html, body").animate({scrollToTop: 0}, 600);
-        //let toTop = this.set('toTop');
+        //Hide Back To Top button on Index view
+        let daRoute = this.get('routing.currentRouteName');
+
+        console.log("This is the Route: ", daRoute);
+
+        if(daRoute === 'index'){
+            this.set('isIndex', true);
+        } else{
+            console.log("Hello You are Not Index");
+            this.set('isIndex', false);
+        }
     },
 
     click: function() {

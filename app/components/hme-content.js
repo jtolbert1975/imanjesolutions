@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+    routing: Ember.inject.service('-routing'),
     isWebdesign: '',
     showWebdesign: '',
     isWebApp: '',
@@ -9,6 +10,7 @@ export default Ember.Component.extend({
     showSocial: '',
     isBranding: '',
     showBranding:'',
+    isIndex: '',
 
 
     didInsertElement(){
@@ -23,6 +25,18 @@ export default Ember.Component.extend({
 
         this.set('isBranding', true);
         this.set('showBranding', false);
+
+       //Show Back To Top button on Home view
+        let daRoute = this.get('routing.currentRouteName');
+
+        console.log("This is the Route: ", daRoute);
+
+        if(daRoute === 'index'){
+            this.set('isIndex', true);
+        } else{
+            console.log("Hello You are Not Index");
+            this.set('isIndex', false);
+        }
 
 
     },
